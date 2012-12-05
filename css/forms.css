@@ -1,8 +1,4 @@
 /*@group basic*/
-b,i {
-	font-weight: normal;
-	font-style: normal;
-}
 form {
 	margin-bottom: 20px;
 }
@@ -90,8 +86,8 @@ input:-moz-placeholder {
 }
 /*@end basic */
 /*@group inline form */
-.inline_form label > b,
-.inline_form .label_group > b {
+.inline_form label > div,
+.inline_form .label_group > div {
 	width: 130px;
 	float: left;
 	text-align: right;
@@ -103,11 +99,9 @@ input:-moz-placeholder {
 	line-height: 36px;
 }
 /*@group clear and vertical*/
-
 /*The explanation for the label group is full width and sitting above the labels. This is useful when the explanation is long*/
-
-.inline_form .input_below b,
-.inline_form .stacked b {
+.inline_form .input_below div,
+.inline_form .stacked div {
 	width: 100%;
 	text-align: left;
 }
@@ -198,6 +192,7 @@ input[type="search"] {
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 	-webkit-appearance: textfield;
+	width: 160px;
 }
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
@@ -205,16 +200,32 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 input.search,
 input.search:focus {
-	border-radius: 8px 0 0 8px;
+	border-radius: 15px 0 0 15px;
 	border-right: none;	
 	outline: none;
 	margin-right: -4px;
+	padding-left: 10px;
 }
 input.search + .btn {
-	border-radius: 0 8px 8px 0;
-	padding: 4px 14px;
+	border-radius: 0 15px 15px 0;
+	padding: 4px 14px 4px 12px;
 }
 /*@end search */
+/*@group errors */
+.error,
+.error span {
+	color: #d60000;
+}
+.error input {
+	color: #d68181;
+}
+.error ::-webkit-input-placeholder {
+  color: #d68181;
+}
+.error :-moz-placeholder {
+  color: #d68181;
+}
+/*@end errors */
 /*@group dimensions*/
 /*@group specific*/
 label .span1 {
@@ -257,18 +268,3 @@ label .xl {
 }
 /*@end simple */
 /*@end dimensions*/
-/*@group errors */
-.error,
-.error span {
-	color: #d60000;
-}
-.error input {
-	color: #d68181;
-}
-.error ::-webkit-input-placeholder {
-  color: #d68181;
-}
-.error :-moz-placeholder {
-  color: #d68181;
-}
-/*@end errors */

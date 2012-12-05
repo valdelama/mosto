@@ -1,399 +1,401 @@
 <!DOCTYPE html>
-
 <html>
-<head>
-    <title>Forms</title>
+    <head>
+	    <title>Forms</title>
 
-    <link href="css/1140.css" rel="stylesheet">
-    <link href="css/base.css" rel="stylesheet">
-    <link href="css/buttons.css" rel="stylesheet">
-    <link href="css/forms.css" rel="stylesheet">
+		<!-- grid -->
+	    <link href="css/1140.css" rel="stylesheet">
 
-</head>
+		<!-- FSK components -->
+	    <link href="css/type.css" rel="stylesheet">
+	    <link href="css/buttons.css" rel="stylesheet">
+        <link href="css/forms.css" rel="stylesheet">
 
-<body>
-    <div class="container content">
-        <h1>Forms</h1>
+		<!-- demo site specific -->
+		<link href="css/styles.css" rel="stylesheet">
 
-        <h3>Basic Form - <small>All inputs below the labels</small></h3>
-        <form>
+	</head>
 
-            <label>
-                Name
-                <input type="text" placeholder="Name" tabindex="1" autofocus>
-            </label>
+    <body>
+        <div class="container content">
+            <h1>Forms</h1>
 
-            <label>
-                Email address
-                <input type="email" placeholder="Email address" tabindex="1">
-            </label>
+            <h3>Basic Form - <small>All inputs below the labels</small></h3>
+            <form>
 
-            <label>
-                Your message
-                <textarea></textarea>
-            </label>
-
-            <label>
-                Favourite beer
-                <select>
-                    <option>Heineken</option>
-                    <option>Carlsberg</option>
-                    <option>Stella Artois</option>
-                    <option>Cronenberg</option>
-                    <option>Guiness</option>
-                    <option>Amstel</option>
-                    <option>Corona</option>
-                </select>
-            </label>
-
-            <div class="label_group">
-                Which is better?
                 <label>
-                    <input type="radio" name="cartoons" value="simpsons">The Simpsons
+                    Name
+                    <input type="text" placeholder="Name" tabindex="1" autofocus>
+                </label>
+
+                <label>
+                    Email address
+                    <input type="email" placeholder="Email address" tabindex="1">
+                </label>
+
+                <label>
+                    Your message
+                    <textarea tabindex="1"></textarea>
+                </label>
+
+                <label>
+                    Favourite beer
+                    <select tabindex="1">
+                        <option>Heineken</option>
+                        <option>Carlsberg</option>
+                        <option>Stella Artois</option>
+                        <option>Cronenberg</option>
+                        <option>Guiness</option>
+                        <option>Amstel</option>
+                        <option>Corona</option>
+                    </select>
+                </label>
+
+                <div class="label_group">
+                    Which is better?
+                    <label>
+                        <input type="radio" name="cartoons" value="simpsons" tabindex="1">The Simpsons
+                    </label>
+                    <label>
+                        <input type="radio" name="cartoons" value="family_guy" tabindex="1">Family Guy
+                    </label>
+                    <label>
+                        <input type="radio" name="cartoons" value="southpark" tabindex="1">Southpark
+                    </label>
+                </div>
+
+                <div class="label_group">
+                    What kind of things would you like to to receive alerts about?
+                    <label>
+                        <input type="checkbox" name="notifications" value="free_beer" tabindex="1">Parties with free beer
+                    </label>
+                    <label>
+                        <input type="checkbox" name="notifications" value="monkey" tabindex="1">Car keys with built-in GPS tracking
+                    </label>
+                    <label>
+                        <input type="checkbox" name="notifications" value="monkey" tabindex="1">Smart phone apps to help you find your car
+                    </label>
+                    <label>
+                        <input type="checkbox" name="notifications" value="giveaway" tabindex="1">Self driving cars for returning from events with free beer
+                    </label>
+                </div>
+            </form>
+
+            <hr>
+
+            <h3>Inline form - <small>All inputs and labels inline</small></h3>
+            <form class="inline_form">
+
+                <label>
+                    <div>Name</div>
+                    <input type="text" placeholder="Name" tabindex="1">
+                </label>
+
+                <label>
+                    <div>Email</div>
+                    <input type="text" placeholder="Email" tabindex="1">
+                </label>
+
+                <div class="label_group">
+                    <div>Which is better?</div>
+                    <label>
+                        <input type="radio" name="cartoons" value="simpsons" tabindex="1">The Simpsons
+                    </label>
+                    <label>
+                        <input type="radio" name="cartoons" value="family_guy" tabindex="1">Family Guy
+                    </label>
+                    <label>
+                        <input type="radio" name="cartoons" value="southpark" tabindex="1">Southpark
+                    </label>
+                </div>
+
+                <div class="label_group input_below">
+                    <div>What kind of things would you like to to receive alerts about?</div>
+                    <label>
+                        <input type="checkbox" name="notifications" value="free_beer" tabindex="1">Parties with free beer
+                    </label>
+                    <label>
+                        <input type="checkbox" name="notifications" value="monkey" tabindex="1">Car keys with built-in GPS tracking
+                    </label>
+                    <label>
+                        <input type="checkbox" name="notifications" value="monkey" tabindex="1">Smart phone apps to help you find your car
+                    </label>
+                    <label>
+                        <input type="checkbox" name="notifications" value="giveaway" tabindex="1">Self driving cars for returning from events with free beer
+                    </label>
+                </div>
+
+                <div class="label_group stacked">
+                    <div>What kind of things would you like to to receive alerts about?</div>
+                    <label>
+                        <input type="checkbox" name="notifications" value="free_beer" tabindex="1">Parties with free beer
+                    </label>
+                    <label>
+                        <input type="checkbox" name="notifications" value="monkey" tabindex="1">Car keys with built-in GPS tracking
+                    </label>
+                    <label>
+                        <input type="checkbox" name="notifications" value="monkey" tabindex="1">Smart phone apps to help you find your car
+                    </label>
+                    <label>
+                        <input type="checkbox" name="notifications" value="giveaway" tabindex="1">Self driving cars for returning from events with free beer
+                    </label>
+                </div>
+
+                <div class="label_group">
+                    <div>Phone:</div>
+                    <label>
+                        <input type="text" class="mini" tabindex="1">
+                    </label>
+                    <label>
+                        <input type="text" class="mini" tabindex="1">
+                    </label>
+                    <label>
+                        <input type="text" class="mini" tabindex="1">
+                    </label>
+                </div>
+
+            </form>
+
+            <hr>
+
+            <h3>Help messages - <small>form  hints</small></h3>
+
+            <h4>Basic</h4>
+            <form>
+                <label>
+                    Name
+                    <input type="text" placeholder="Name" tabindex="1">
+                    <span>Please enter your full name</span>
                 </label>
                 <label>
-                    <input type="radio" name="cartoons" value="family_guy">Family Guy
+                    Email address
+                    <input type="email" placeholder="Email address" tabindex="1">
+                    <span>Must be a valid email address</span>
+                </label>
+            </form>
+
+            <h4>Inline form with inline help</h4>
+            <form class="inline_form">
+                <label>
+                    <div>Name</div>
+                    <input type="text" placeholder="Name" tabindex="1">
+                    <span>Please enter your full name</span>
                 </label>
                 <label>
-                    <input type="radio" name="cartoons" value="southpark">Southpark
+                    <div>Email address</div>
+                    <input type="email" placeholder="Email address" tabindex="1">
+                    <span>Must be a valid email address</span>
                 </label>
-            </div>
+            </form>
 
-            <div class="label_group">
-                What kind of things would you like to to receive alerts about?
+            <h4>Inline form with help below</h4>
+            <form class="inline_form help_below">
                 <label>
-                    <input type="checkbox" name="notifications" value="free_beer">Parties with free beer
-                </label>
-                <label>
-                    <input type="checkbox" name="notifications" value="monkey">Car keys with built-in GPS tracking
-                </label>
-                <label>
-                    <input type="checkbox" name="notifications" value="monkey">Smart phone apps to help you find your car
+                    <div>Name</div>
+                    <input type="text" placeholder="Name" tabindex="1">
+                    <span>Please enter your full name</span>
                 </label>
                 <label>
-                    <input type="checkbox" name="notifications" value="giveaway">Self driving cars for returning from events with free beer
+                    <div>Email address</div>
+                    <input type="email" placeholder="Email address" tabindex="1">
+                    <span>Must be a valid email address</span>
                 </label>
-            </div>
-        </form>
+            </form>
 
-        <hr>
-
-        <h3>Inline form - <small>All inputs and labels inline</small></h3>
-        <form class="inline_form">
-
-            <label>
-                <b>Name</b>
-                <input type="text" placeholder="Name" tabindex="1">
-            </label>
-
-            <label>
-                <b>Email</b>
-                <input type="text" placeholder="Email" tabindex="1">
-            </label>
-
-            <div class="label_group">
-                <b>Which is better?</b>
+            <h4>Help appears on :focus <small>- CSS only!</small></h4>
+            <form>
                 <label>
-                    <input type="radio" name="cartoons" value="simpsons">The Simpsons
+                    Name
+                    <input type="text" placeholder="Name" tabindex="1">
+                    <span class="hint">Please enter your full name</span>
                 </label>
                 <label>
-                    <input type="radio" name="cartoons" value="family_guy">Family Guy
+                    Email address
+                    <input type="email" placeholder="Email address" tabindex="1">
+                    <span class="hint">Must be a valid email address</span>
+                </label>
+            </form>
+            <form class="inline_form">
+                <label>
+                    <div>Name</div>
+                    <input type="text" placeholder="Name" tabindex="1">
+                    <span class="hint">Please enter your full name</span>
                 </label>
                 <label>
-                    <input type="radio" name="cartoons" value="southpark">Southpark
+                    <div>Email address</div>
+                    <input type="email" placeholder="Email address" tabindex="1">
+                    <span class="hint">Must be a valid email address</span>
                 </label>
-            </div>
+            </form>
 
-            <div class="label_group input_below">
-                <b>What kind of things would you like to to receive alerts about?</b>
+            <hr>
+            <h3>Dimensions</h3>
+            <form class="inline_form">
                 <label>
-                    <input type="checkbox" name="notifications" value="free_beer">Parties with free beer
-                </label>
-                <label>
-                    <input type="checkbox" name="notifications" value="monkey">Car keys with built-in GPS tracking
-                </label>
-                <label>
-                    <input type="checkbox" name="notifications" value="monkey">Smart phone apps to help you find your car
+                    <div>Span 1</div>
+                    <input type="text" placeholder="12" tabindex="1" class="span1">
                 </label>
                 <label>
-                    <input type="checkbox" name="notifications" value="giveaway">Self driving cars for returning from events with free beer
-                </label>
-            </div>
-
-            <div class="label_group stacked">
-                <b>What kind of things would you like to to receive alerts about?</b>
-                <label>
-                    <input type="checkbox" name="notifications" value="free_beer">Parties with free beer
+                    <div>Span 2</div>
+                    <input type="text" placeholder="12" tabindex="1" class="span2">
                 </label>
                 <label>
-                    <input type="checkbox" name="notifications" value="monkey">Car keys with built-in GPS tracking
+                    <div>Span 3</div>
+                    <input type="text" placeholder="123" tabindex="1" class="span3">
                 </label>
                 <label>
-                    <input type="checkbox" name="notifications" value="monkey">Smart phone apps to help you find your car
+                    <div>Span 4</div>
+                    <input type="text" placeholder="1234" tabindex="1" class="span4">
                 </label>
                 <label>
-                    <input type="checkbox" name="notifications" value="giveaway">Self driving cars for returning from events with free beer
+                    <div>Span 5</div>
+                    <input type="text" placeholder="12345" tabindex="1" class="span5">
                 </label>
-            </div>
+                <label>
+                    <div>Span 6</div>
+                    <input type="text" placeholder="123456" tabindex="1" class="span6">
+                </label>
+                <label>
+                    <div>Span 7</div>
+                    <input type="text" placeholder="1234567" tabindex="1" class="span7">
+                </label>
+                <label>
+                    <div>Span 8</div>
+                    <input type="text" placeholder="1234" tabindex="1" class="span8">
+                </label>
+                <label>
+                    <div>Mini</div>
+                    <input type="text" placeholder="Name" tabindex="1" class="mini">
+                </label>
+                <label>
+                    <div>Small</div>
+                    <input type="text" placeholder="Name" tabindex="1" class="small">
+                </label>
+                <label>
+                    <div>Medium</div>
+                    <input type="text" placeholder="Name" tabindex="1">
+                    <span>(default)</span>
+                </label>
+                <label>
+                    <div>Large</div>
+                    <input type="text" placeholder="Name" tabindex="1" class="large">
+                </label>
+                <label>
+                    <div>Xlarge</div>
+                    <input type="text" placeholder="Name" tabindex="1" class="xl">
+                </label>
+            </form>
 
-            <div class="label_group">
-            	<b>Phone:</b>
-            	<label>
-            		<input type="text" class="mini">
-            	</label>
-            	<label>
-            		<input type="text" class="mini">
-            	</label>
-            	<label>
-            		<input type="text" class="mini">
-            	</label>
-            </div>
+            <hr>
+            <h3>Prepended and appended inputs</h3>
 
-        </form>
+            <form class="inline_form">
 
-        <hr>
+                <h4>Prepend</h4>
+                <label>
+                    <div>Amount</div>
+                    <i class="prepend">$</i>
+                    <input type="text" placeholder="Amount" tabindex="1" class="span3">
+                    <span>How much would you like to donate?<span>
+                </label>
 
-        <h3>Help messages - <small>form  hints</small></h3>
+                <h4>Append</h4>
+                <label>
+                    <div>Amount</div>
+                    <input type="text" placeholder="Amount" tabindex="1" class="appended span3">
+                    <i class="append">&euro;</i>
+                    <span>How much would you like to donate?<span>
+                </label>
 
-        <h4>Basic</h4>
-        <form>
-            <label>
-                Name
-                <input type="text" placeholder="Name" tabindex="1">
-                <span>Please enter your full name</span>
-            </label>
-            <label>
-                Email address
-                <input type="email" placeholder="Email address" tabindex="1">
-                <span>Must be a valid email address</span>
-            </label>
-        </form>
+                <h4>Both</h4>
+                <label>
+                    <div>Amount</div>
+                    <i class="prepend">$</i>
+                    <input type="text" placeholder="Amount" tabindex="1" class="appended span3">
+                    <i class="append">.00</i>
+                    <span>How much would you like to donate?<span>
+                </label>
+            </form>
 
-        <h4>Inline form with inline help</h4>
-        <form class="inline_form">
-            <label>
-                <b>Name</b>
-                <input type="text" placeholder="Name" tabindex="1">
-                <span>Please enter your full name</span>
-            </label>
-            <label>
-                <b>Email address</b>
-                <input type="email" placeholder="Email address" tabindex="1">
-                <span>Must be a valid email address</span>
-            </label>
-        </form>
-
-        <h4>Inline form with help below</h4>
-        <form class="inline_form help_below">
-            <label>
-                <b>Name</b>
-                <input type="text" placeholder="Name" tabindex="1">
-                <span>Please enter your full name</span>
-            </label>
-            <label>
-                <b>Email address</b>
-                <input type="email" placeholder="Email address" tabindex="1">
-                <span>Must be a valid email address</span>
-            </label>
-        </form>
-
-        <h4>Help appears on :focus <small>- CSS only!</small></h4>
-        <form>
-            <label>
-                Name
-                <input type="text" placeholder="Name" tabindex="1">
-                <span class="hint">Please enter your full name</span>
-            </label>
-            <label>
-                Email address
-                <input type="email" placeholder="Email address" tabindex="1">
-                <span class="hint">Must be a valid email address</span>
-            </label>
-        </form>
-        <form class="inline_form">
-            <label>
-                <b>Name</b>
-                <input type="text" placeholder="Name" tabindex="1">
-                <span class="hint">Please enter your full name</span>
-            </label>
-            <label>
-                <b>Email address</b>
-                <input type="email" placeholder="Email address" tabindex="1">
-                <span class="hint">Must be a valid email address</span>
-            </label>
-        </form>
-
-		<hr>
-		<h3>Dimensions</h3>
-		<form class="inline_form">
-			<label>
-			    <b>Span 1</b>
-			    <input type="text" placeholder="12" tabindex="1" class="span1">
-			</label>
-			<label>
-			    <b>Span 2</b>
-			    <input type="text" placeholder="12" tabindex="1" class="span2">
-			</label>
-			<label>
-			    <b>Span 3</b>
-			    <input type="text" placeholder="123" tabindex="1" class="span3">
-			</label>
-			<label>
-			    <b>Span 4</b>
-			    <input type="text" placeholder="1234" tabindex="1" class="span4">
-			</label>
-			<label>
-			    <b>Span 5</b>
-			    <input type="text" placeholder="12345" tabindex="1" class="span5">
-			</label>
-			<label>
-			    <b>Span 6</b>
-			    <input type="text" placeholder="123456" tabindex="1" class="span6">
-			</label>
-			<label>
-			    <b>Span 7</b>
-			    <input type="text" placeholder="1234567" tabindex="1" class="span7">
-			</label>
-			<label>
-			    <b>Span 8</b>
-			    <input type="text" placeholder="1234" tabindex="1" class="span8">
-			</label>
-		    <label>
-		        <b>Mini</b>
-		        <input type="text" placeholder="Name" tabindex="1" class="mini">
-		    </label>
-			<label>
-			    <b>Small</b>
-			    <input type="text" placeholder="Name" tabindex="1" class="small">
-			</label>
-			<label>
-			    <b>Medium</b>
-			    <input type="text" placeholder="Name" tabindex="1">
-			    <span>(default)</span>
-			</label>
-			<label>
-			    <b>Large</b>
-			    <input type="text" placeholder="Name" tabindex="1" class="large">
-			</label>
-			<label>
-			    <b>Xlarge</b>
-			    <input type="text" placeholder="Name" tabindex="1" class="xl">
-			</label>
-		</form>
-
-        <hr>
-        <h3>Prepended and appended inputs</h3>
-
-        <form class="inline_form">
-
-			<h4>Prepend</h4>
-            <label>
-                <b>Amount</b>
-                <i class="prepend">$</i>
-                <input type="text" placeholder="Amount" tabindex="1" class="span3">
-                <span>How much would you like to donate?<span>
-            </label>
-
-			<h4>Append</h4>
-            <label>
-                <b>Amount</b>
-                <input type="text" placeholder="Amount" tabindex="1" class="appended span3">
-                <i class="append">&euro;</i>
-                <span>How much would you like to donate?<span>
-            </label>
-
-            <h4>Both</h4>
-            <label>
-                <b>Amount</b>
-                <i class="prepend">$</i>
-                <input type="text" placeholder="Amount" tabindex="1" class="appended span3">
-                <i class="append">.00</i>
-                <span>How much would you like to donate?<span>
-            </label>
-      	</form>
-
-      	<hr>
-      	<h3>Search</h3>
-      	<form class="inline_form">
-      		<label>
-	      		<b>Search images</b>
-	      		<input type="search" placeholder="Search here..." tabindex="1" class="search">
-	      		<button type="submit" class="btn">Go</button>
-      		</label>
-  		</form>
+            <hr>
+            <h3>Search</h3>
+            <form class="inline_form">
+                <label>
+                    <div>Search images</div>
+                    <input type="search" placeholder="Search here..." tabindex="1" class="search">
+                    <button type="submit" class="btn">Go</button>
+                </label>
+            </form>
 
 
-  		<hr>
-  		<form class="inline_form">
-  		    <div class="label_group">
-  		    	<b>Phone no.</b>
-  			    <label>
-  			    	<i class="prepend">+</i>
-  			    	<input type="text" class="span1" placeholder="44">
-  			    </label>
-  			    -
-  			    <label>
-  			    	<input type="text" class="span4">
-  			    </label>
-  			    -
-  			    <label>
-  			    	<input type="text" class="span4">
-  			    </label>
-  			    -
-  			    <label>
-  			    	<input type="text" class="span2 appended">
-  			    	<i class="append">ext.</i>
-  			    </label>
-  		    </div>
-  		</form>
+            <hr>
+            <form class="inline_form">
+                <div class="label_group">
+                    <div>Phone no.</div>
+                    <label>
+                        <i class="prepend">+</i>
+                        <input type="text" class="span1" placeholder="44" tabindex="1">
+                    </label>
+                    -
+                    <label>
+                        <input type="text" class="span4" tabindex="1">
+                    </label>
+                    -
+                    <label>
+                        <input type="text" class="span4" tabindex="1">
+                    </label>
+                    -
+                    <label>
+                        <input type="text" class="span2 appended" tabindex="1">
+                        <i class="append">ext.</i>
+                    </label>
+                </div>
+            </form>
 
 
-        <h3>Validation and error messages</h3>
+            <h3>Validation and error messages</h3>
 
-        <form>
-            <label class="error">
-                Email address
-                <input type="email" value="bob@something.domain">
-                <span>Please use a valid email address</span>
-            </label>
-        </form>
-
-
-  		<form class="inline_form">
-            <label class="error">
-                <b>Email address</b>
-                <input type="email" value="bob@something.domain">
-                <span>Please use a valid email address</span>
-            </label>
-        </form>
-
-        <form class="inline_form">
-  		    <div class="label_group error">
-  		    	<b>Phone no.</b>
-  			    <label>
-  			    	<i class="prepend">+</i>
-  			    	<input type="text" class="span1" placeholder="44">
-  			    </label>
-  			    -
-  			    <label>
-  			    	<input type="text" class="span4">
-  			    </label>
-  			    -
-  			    <label>
-  			    	<input type="text" class="span4">
-  			    </label>
-  			    -
-  			    <label>
-  			    	<input type="text" class="span2 appended">
-  			    	<i class="append">ext.</i>
-  			    </label>
-                <span>Please fill in all fields</span>
-  		    </div>
-  		</form>
-
-    </div>
+            <form>
+                <label class="error">
+                    Email address
+                    <input type="email" value="bob@something.domain" tabindex="1">
+                    <span>Please use a valid email address</span>
+                </label>
+            </form>
 
 
+            <form class="inline_form">
+                <label class="error">
+                    <div>Email address</div>
+                    <input type="email" value="bob@something.domain" tabindex="1">
+                    <span>Please use a valid email address</span>
+                </label>
+            </form>
 
-</body>
+            <form class="inline_form">
+                <div class="label_group error">
+                    <div>Phone no.</div>
+                    <label>
+                        <i class="prepend">+</i>
+                        <input type="text" class="span1" placeholder="44" tabindex="1">
+                    </label>
+                    -
+                    <label>
+                        <input type="text" class="span4" tabindex="1">
+                    </label>
+                    -
+                    <label>
+                        <input type="text" class="span4" tabindex="1">
+                    </label>
+                    -
+                    <label>
+                        <input type="text" class="span2 appended" tabindex="1">
+                        <i class="append">ext.</i>
+                    </label>
+                    <span>Please fill in all fields</span>
+                </div>
+            </form>
+
+        </div>
+    </body>
 </html>
