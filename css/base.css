@@ -15,7 +15,12 @@ hr {
 	color: #eee;
 	background: #ccc;
 }
-
+a {
+	color: #0199d2;	
+}
+h1,h2,h3,h4,h5,h6 {
+	color: #494949;
+}
 h1 {
 	font-size: 48px;
 	line-height: 72px;
