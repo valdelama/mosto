@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+}
+html, body {
+	color: #444;
+	font: 13px/18px Arial, Helvetica, Geneva, sans-serif;
+}
+.container.content {
+	margin-top: 20px;
+}
+hr {
+	margin: 30px 0;
+	border: none;
+	height: 1px;
+	color: #eee;
+	background: #ccc;
+}
+
+h1 {
+	font-size: 48px;
+	line-height: 72px;
+}
+
+h2 {
+	font-size: 36px;
+	line-height: 54px;
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 36px;
+}
+
+h4 {
+	font-size: 21px;
+	line-height: 36px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+p {
+	margin-bottom: 18px;
+}
+
+ol, ul {
+	margin: 0 0 18px 24px;
+}

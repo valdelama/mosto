@@ -1,0 +1,269 @@
+/*@group basic*/
+b,i {
+	font-weight: normal;
+	font-style: normal;
+}
+form {
+	margin-bottom: 20px;
+}
+label,
+.label_group {
+	display: block;
+	margin-bottom: 10px;
+	padding: 5px;
+	overflow: hidden;
+}
+.label_group label {
+	margin-bottom: 5px;
+	padding: 0;
+	color: #777;
+}
+.label_group label:first-of-type {
+	margin-top: 3px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+	margin: 0 5px;
+}
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input.search {
+	display: inherit;
+	height: 18px;
+	padding: 4px;
+	margin: 3px 0;
+	width: 210px;
+}
+textarea {
+  height: auto;
+}
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input.search {
+	background-color: #ffffff;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+	transition: all linear 0.2s;
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input.search:focus {
+	border-color: #a9a9a9;
+	outline: 0;
+  	box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2);
+ }
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+select {
+  width: 220px;
+}
+select,
+input[type="file"] {
+	height: 28px;
+	line-height: 28px;
+}
+select[multiple],
+select[size] {
+  height: auto;
+}
+input:-moz-placeholder {
+  color: #999999;
+}
+:-ms-input-placeholder {
+  color: #999999;
+}
+::-webkit-input-placeholder {
+  color: #999999;
+}
+/*@end basic */
+/*@group inline form */
+.inline_form label > b,
+.inline_form .label_group > b {
+	width: 130px;
+	float: left;
+	text-align: right;
+	padding-right: 10px;
+	line-height: 36px;
+}
+.inline_form .label_group label {
+	display: inline;
+	line-height: 36px;
+}
+/*@group clear and vertical*/
+
+/*The explanation for the label group is full width and sitting above the labels. This is useful when the explanation is long*/
+
+.inline_form .input_below b,
+.inline_form .stacked b {
+	width: 100%;
+	text-align: left;
+}
+.inline_form .input_below label,
+.inline_form .stacked label {
+	line-height: 18px;
+}
+.inline_form .stacked label {
+	display: table;
+}
+/*@end clear */
+.inline_form input[type="text"],
+.inline_form input[type="password"],
+.inline_form input[type="email"],
+.inline_form input.search {
+	display: inline;
+}
+.inline_form .label_group label input {
+	float: none;
+}
+/*@end inline form */
+/*@group help*/
+label span {
+	color: #999;
+	font-size: 12px;
+}
+/*@group inline*/
+.inline_form label span {
+	line-height: 36px;
+	margin-left: 5px;
+}
+.inline_form.help_below label span {
+	display: block;
+	clear: both;
+	line-height: inherit;
+	margin-left: 145px;
+}
+/*@end inline*/
+/*@group hint*/
+label span.hint {
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+	opacity: 0;
+	position: absolute;
+}
+label.error span.hint {
+	opacity: 1;
+}
+label.error span.hint/*make sure error messages are always visible*/,
+input:focus + span.hint {
+	opacity: 1;
+}
+/*@end hint*/
+/*@end help*/
+/*@group prepend & apend */
+.prepend,
+.append {
+	background: #f9f9f9;
+	display: inline;	
+	border: 1px solid #cccccc;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+	padding: 5px 8px 6px;
+}
+.prepend {
+	border-right: none;
+	margin-right: -4px;
+}
+.append {
+	border-left: none;
+	margin-left: -4px;
+}
+.prepend + input,
+.append {
+	border-radius: 0 3px 3px 0;
+}
+input.appended,
+.prepend {
+	border-radius: 3px 0 0 3px;
+}
+.prepend + input.appended {
+	border-radius: 0;
+}
+/*@end prepend & apend */
+/*@group search */
+input[type="search"] {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	-webkit-appearance: textfield;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+}
+input.search,
+input.search:focus {
+	border-radius: 8px 0 0 8px;
+	border-right: none;	
+	outline: none;
+}
+/*@end search */
+/*@group dimensions*/
+/*@group specific*/
+label .span1 {
+	width: 16px;
+}
+label .span2 {
+	width: 32px;
+}
+label .span3 {
+	width: 48px;
+}
+label .span4 {
+	width: 64px;
+}
+label .span5 {
+	width: 80px;
+}
+label .span6 {
+	width: 96px;
+}
+label .span7 {
+	width: 112px;
+}
+label .span8 {
+	width: 128px;
+}
+/*@end specific*/
+/*@group simple */
+label .mini {
+	width: 70px;
+}
+label .small {
+	width: 140px;
+}
+label .large {
+	width: 280px;
+}
+label .xl {
+	width: 350px;
+}
+/*@end simple */
+/*@end dimensions*/
+/*@group errors */
+.error,
+.error span {
+	color: #d60000;
+}
+.error input {
+	color: #d68181;
+}
+.error ::-webkit-input-placeholder {
+  color: #d68181;
+}
+.error :-moz-placeholder {
+  color: #d68181;
+}
+/*@end errors */
