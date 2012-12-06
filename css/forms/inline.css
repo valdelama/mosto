@@ -7,6 +7,9 @@
   padding-right: 10px;
   line-height: 36px; }
 
+.inline_form label input {
+  display: inline-block; }
+
 .inline_form .label_group label {
   display: inline;
   line-height: 36px; }

@@ -22,6 +22,8 @@ input[type="checkbox"] {
   margin: 0 5px; }
 
 select,
+select[multiple],
+select[size],
 textarea,
 input[type="text"],
 input[type="password"],
@@ -43,7 +45,9 @@ textarea,
 input[type="text"],
 input[type="password"],
 input[type="email"],
-input.search {
+input.search,
+select[multiple],
+select[size] {
   background-color: #ffffff;
   border: 1px solid #ccc;
   border-radius: 3px;

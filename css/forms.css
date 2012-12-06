@@ -22,6 +22,8 @@ input[type="checkbox"] {
   margin: 0 5px; }
 
 select,
+select[multiple],
+select[size],
 textarea,
 input[type="text"],
 input[type="password"],
@@ -43,7 +45,9 @@ textarea,
 input[type="text"],
 input[type="password"],
 input[type="email"],
-input.search {
+input.search,
+select[multiple],
+select[size] {
   background-color: #ffffff;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -104,6 +108,9 @@ label span {
   text-align: right;
   padding-right: 10px;
   line-height: 36px; }
+
+.inline_form label input {
+  display: inline-block; }
 
 .inline_form .label_group label {
   display: inline;
@@ -216,7 +223,8 @@ input.search:focus {
 
 input.search + .btn {
   border-radius: 0 15px 15px 0;
-  padding: 4px 14px 4px 12px; }
+  padding: 2px 14px 4px 12px;
+  line-height: 20px; }
 
 /*@end search */
 /*@group errors */
