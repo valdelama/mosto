@@ -28,6 +28,7 @@ textarea,
 input[type="text"],
 input[type="password"],
 input[type="email"],
+input[type="number"],
 input.search {
   display: inherit;
   height: 18px;
@@ -41,10 +42,14 @@ textarea {
   min-height: 60px;
   width: 240px; }
 
+input[type="number"] {
+  width: 60px; }
+
 textarea,
 input[type="text"],
 input[type="password"],
 input[type="email"],
+input[type="number"],
 input.search,
 select[multiple],
 select[size] {
@@ -58,6 +63,7 @@ textarea:focus,
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
+input[type="number"]:focus,
 input.search:focus {
   border-color: #a9a9a9;
   outline: 0;
