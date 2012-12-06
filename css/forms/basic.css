@@ -31,7 +31,8 @@ input.search {
   height: 18px;
   padding: 4px;
   margin: 3px 0;
-  width: 210px; }
+  width: 210px;
+  vertical-align: middle; }
 
 textarea {
   height: auto; }

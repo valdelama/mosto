@@ -11,6 +11,10 @@
   display: inline;
   line-height: 36px; }
 
+/* by default webkit select is a lot shorter and sits higher up */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  .inline_form select {
+    margin-top: 9px; } }
 /*@group clear and vertical*/
 /*The explanation for the label group is full width and sitting above the labels. This is useful when the explanation is long*/
 .inline_form .input_below div,
