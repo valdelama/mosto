@@ -226,3 +226,45 @@ input.search + .btn {
   color: #d68181; }
 
 /*@end errors */
+/*@group dimensions*/
+/*@group specific*/
+label .span1 {
+  width: 16px; }
+
+label .span2 {
+  width: 32px; }
+
+label .span3 {
+  width: 48px; }
+
+label .span4 {
+  width: 64px; }
+
+label .span5 {
+  width: 80px; }
+
+label .span6 {
+  width: 96px; }
+
+label .span7 {
+  width: 112px; }
+
+label .span8 {
+  width: 128px; }
+
+/*@end specific*/
+/*@group simple */
+label .mini {
+  width: 70px; }
+
+label .small {
+  width: 140px; }
+
+label .large {
+  width: 280px; }
+
+label .xl {
+  width: 350px; }
+
+/*@end simple */
+/*@end dimensions*/
