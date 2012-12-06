@@ -75,6 +75,10 @@ select[multiple],
 select[size] {
   height: auto;
 }
+input[type="radio"],
+input[type="checkbox"] {
+	vertical-align: text-top;
+}
 input:-moz-placeholder {
   color: #999999;
 }
