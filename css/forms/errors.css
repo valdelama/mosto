@@ -1,0 +1,15 @@
+/*@group errors */
+.error,
+.error span {
+  color: #d60000; }
+
+.error input {
+  color: #d68181; }
+
+.error ::-webkit-input-placeholder {
+  color: #d68181; }
+
+.error :-moz-placeholder {
+  color: #d68181; }
+
+/*@end errors */

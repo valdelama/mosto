@@ -1,0 +1,23 @@
+// FSK forms
+// =============
+
+// all forms need this to work
+@import "forms/basic";
+
+// only required for labels and inputs all on the same line
+@import "forms/inline";
+
+// form hints appear on :focus
+@import "forms/hint";
+
+// prepended and appended input elements eg. a dollar sign before the input
+@import "forms/pend";
+
+// only required for search forms
+@import "forms/search";
+
+// error messages
+@import "forms/errors";
+
+// different size inputs
+@import "forms/dimensions";

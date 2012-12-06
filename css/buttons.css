@@ -1,7 +1,7 @@
 /*@group basic */
 .btn {
 	display: inline-block;
-	padding: 7px 15px;
+	padding: 8px 16px;
 	border: 1px solid #ccc;
 	border: 1px solid rgba(0,0,0,0.15);
 	border-radius: 4px;	
@@ -30,11 +30,11 @@
 /*@end basic */
 /*@group sizes */
 .btn.small {
-	padding: 4px 12px;
-	font-size: 12px;
+	padding: 6px 12px;
+	font-size: 11px;
 }
 .btn.large {
-	padding: 7px 24px;
+	padding: 7px 26px;
 	font-size: 18px;
 	line-height: 36px;
 }
@@ -62,16 +62,12 @@
 /*@end primary*/
 /*@group primary + 3D*/
 .btn.primary.threeD {
-	padding-bottom: 8px;
 	background: #02a0d9;
-	color: #f9f9f9;
 	box-shadow: 
 		0 4px 1px #013e54, 
 		0px 8px 8px rgba(0,0,0,0.4);
-	transition: all 1s ease-in;	
 }
 .btn.primary.threeD:hover {
-	color: #fff;
 	box-shadow: 
 		0 4px 1px #013e54, 
 		0px 7px 7px rgba(0,0,0,0.4);
