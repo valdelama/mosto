@@ -35,7 +35,9 @@ input.search {
 	vertical-align: middle;	
 }
 textarea {
-  height: auto;
+	height: auto;
+	min-height: 60px;
+	width: 240px;
 }
 textarea,
 input[type="text"],
