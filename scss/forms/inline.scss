@@ -1,3 +1,5 @@
+@import "../variables";
+
 /*@group inline form */
 .inline_form label > div,
 .inline_form .label_group > div {
@@ -5,7 +7,7 @@
 	float: left;
 	text-align: right;
 	padding-right: 10px;
-	line-height: 36px;
+	line-height: $line-height*2;
 }
 .inline_form label input,
 .inline_form label select {
@@ -14,12 +16,12 @@
 .inline_form .label_group label,
 .label_group.inline label {
 	display: inline;
-	line-height: 36px;
+	line-height: $line-height*2;
 }
 /* by default webkit select is a lot shorter and sits higher up */
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 	.inline_form select {
-		margin-top: 9px;
+		margin-top: $line-height/2;
 	}
 }
 /*@group clear and vertical*/
@@ -31,7 +33,7 @@
 }
 .inline_form .input_below label,
 .inline_form .stacked label {
-	line-height: 18px;
+	line-height: $line-height;
 }
 .inline_form .stacked label {
 	display: table;
@@ -47,7 +49,7 @@ input[type="search"] {
 	float: none;
 }
 .inline_form label span {
-	line-height: 36px;
+	line-height: $line-height*2;
 	margin-left: 5px;
 }
 .inline_form.help_below label span {

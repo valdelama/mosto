@@ -1,16 +1,16 @@
-/* ============================== */
-/* ! Layout for desktop version   */
-/* ============================== */
-
-	body {
-		
-	}
-
-
-/* ============================= */
-/* ! Layout for mobile version   */
-/* ============================= */
-
+/*@group Desktop*/
+.container.content {
+	margin-top: 20px;
+}
+hr {
+	margin: 30px 0;
+	border: none;
+	height: 1px;
+	color: #eee;
+	background: #ccc;
+}
+/*@end Desktop*/
+/*@group mobile*/
 @media handheld, only screen and (max-width: 767px) {
 
 	body {
@@ -18,17 +18,9 @@
 	}
 
 }
-
-
-/* ========================================== */
-/* ! Provide higher res assets for iPhone 4   */
-/* ========================================== */
-
+/*@end mobile*/
+/*@group retina */
 @media only screen and (-webkit-min-device-pixel-ratio: 2) { 
 
-/*	.logo {
-		background: url(logo2x.jpg) no-repeat;
-		background-size: 212px 303px;
-	}*/
-
 }
+/*@end retina */

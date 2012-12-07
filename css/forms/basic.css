@@ -1,6 +1,6 @@
 /*@group basic*/
 form {
-  margin-bottom: 20px; }
+  margin-bottom: 18px; }
 
 label,
 .label_group {
@@ -10,16 +10,17 @@ label,
   overflow: hidden; }
 
 .label_group label {
-  margin-bottom: 5px;
-  padding: 0;
-  color: #777; }
+  margin-bottom: 3px;
+  padding: 2px 0 0 0;
+  color: #777777; }
 
 .label_group label:first-of-type {
   margin-top: 3px; }
 
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 0 5px; }
+  margin: 0 5px;
+  vertical-align: text-top; }
 
 select,
 select[multiple],
@@ -53,8 +54,8 @@ input[type="number"],
 input[type="search"],
 select[multiple],
 select[size] {
-  background-color: #ffffff;
-  border: 1px solid #ccc;
+  background-color: #fff;
+  border: 1px solid #cccccc;
   border-radius: 3px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
   transition: all linear 0.2s; }
@@ -88,10 +89,6 @@ select[multiple],
 select[size] {
   height: auto; }
 
-input[type="radio"],
-input[type="checkbox"] {
-  vertical-align: text-top; }
-
 input:-moz-placeholder {
   color: #999999; }
 
@@ -102,7 +99,7 @@ input:-moz-placeholder {
   color: #999999; }
 
 label span {
-  color: #999;
+  color: #999999;
   font-size: 12px; }
 
 /*@end basic */
