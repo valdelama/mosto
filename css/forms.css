@@ -119,7 +119,8 @@ label span {
 .inline_form label select {
   display: inline-block; }
 
-.inline_form .label_group label {
+.inline_form .label_group label,
+.label_group.inline label {
   display: inline;
   line-height: 36px; }
 
