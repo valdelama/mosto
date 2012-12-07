@@ -5,7 +5,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 input[type="search"],
-input.search:focus {
+input[type="search"]:focus {
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
@@ -19,7 +19,7 @@ input.search:focus {
 	margin: 0 -4px 0 3px;
 }
 
-input.search + button[type="submit"] {
+input[type="search"] + button[type="submit"] {
 	display: inline-block;
 	padding: 0 14px 0 12px;
 	height: 28px;

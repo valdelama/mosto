@@ -29,7 +29,7 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="number"],
-input.search {
+input[type="search"] {
   display: inherit;
   height: 18px;
   padding: 4px;
@@ -50,7 +50,7 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="number"],
-input.search,
+input[type="search"],
 select[multiple],
 select[size] {
   background-color: #ffffff;
@@ -64,7 +64,7 @@ input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
 input[type="number"]:focus,
-input.search:focus {
+input[type="search"]:focus {
   border-color: #a9a9a9;
   outline: 0;
   box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2); }
@@ -146,7 +146,7 @@ label span {
 .inline_form input[type="text"],
 .inline_form input[type="password"],
 .inline_form input[type="email"],
-.inline_form input.search {
+input[type="search"] {
   display: inline; }
 
 .inline_form .label_group label input {
@@ -215,7 +215,7 @@ input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none; }
 
 input[type="search"],
-input.search:focus {
+input[type="search"]:focus {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -228,7 +228,7 @@ input.search:focus {
   padding-left: 10px;
   margin: 0 -4px 0 3px; }
 
-input.search + button[type="submit"] {
+input[type="search"] + button[type="submit"] {
   display: inline-block;
   padding: 0 14px 0 12px;
   height: 28px;

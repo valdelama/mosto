@@ -38,7 +38,7 @@
 .inline_form input[type="text"],
 .inline_form input[type="password"],
 .inline_form input[type="email"],
-.inline_form input.search {
+input[type="search"] {
   display: inline; }
 
 .inline_form .label_group label input {
