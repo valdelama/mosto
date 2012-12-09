@@ -1,5 +1,8 @@
 @import "../variables";
 /*@group basic*/
+i {
+	font-style: normal; /*used for *pend*/
+}
 form {
 	margin-bottom: $line-height;
 }
