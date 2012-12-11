@@ -15,6 +15,17 @@
 		<!-- demo site specific -->
 		<link href="css/styles.css" rel="stylesheet">
 
+
+		<!-- Do something with this crap! -->
+		<!--[if lt IE 9]>
+			<style>
+				.prepend,
+				.append {
+					padding-bottom: 5px;
+				}
+			</style>
+		<![endif]-->
+
 	</head>
 
     <body>
@@ -40,7 +51,7 @@
                 </label>
 
                 <label>
-                    <input type="checkbox" tabindex="1"> Accept the terms and conditions
+                    <input type="checkbox" tabindex="1">Accept the terms and conditions
                 </label>
 
                 <label>
@@ -56,7 +67,7 @@
                     </select>
                 </label>
 
-                <div class="label_group">
+                <div class="label-group">
                     Which is better?
                     <label>
                         <input type="radio" name="cartoons" value="simpsons" tabindex="1">The Simpsons
@@ -69,7 +80,7 @@
                     </label>
                 </div>
 
-                <div class="label_group">
+                <div class="label-group">
                     What kind of things would you like to to receive alerts about?
                     <label>
                         <input type="checkbox" name="notifications" value="free_beer" tabindex="1">Parties with free beer
@@ -85,7 +96,7 @@
                     </label>
                 </div>
 
-                <div class="label_group inline">
+                <div class="label-group inline">
                     Which is better?
                     <label>
                         <input type="radio" name="cartoons" value="simpsons" tabindex="1">The Simpsons
@@ -98,12 +109,23 @@
                     </label>
                 </div>
 
+				<div class="label-group inline">
+					<label>
+						Username
+						<input type="text" placeholder="Username" tabindex="1">
+					</label>
+					<label>
+						Password
+						<input type="password" placeholder="Password" tabindex="1">
+					</label>
+				</div>
+
             </form>
 
             <hr>
 
             <h3>Inline form - <small>All inputs and labels inline</small></h3>
-            <form class="inline_form">
+            <form class="form-horizontal">
 
                 <label>
                     <div>Name</div>
@@ -128,7 +150,7 @@
                     </select>
                 </label>
 
-                <div class="label_group">
+                <div class="label-group">
                     <div>Which is better?</div>
                     <label>
                         <input type="radio" name="cartoons" value="simpsons" tabindex="1">The Simpsons
@@ -141,7 +163,7 @@
                     </label>
                 </div>
 
-                <div class="label_group input_below">
+                <div class="label-group input_below">
                     <div>What kind of things would you like to to receive alerts about?</div>
                     <label>
                         <input type="checkbox" name="notifications" value="free_beer" tabindex="1">Parties with free beer
@@ -157,7 +179,7 @@
                     </label>
                 </div>
 
-                <div class="label_group stacked">
+                <div class="label-group stacked">
                     <div>What kind of things would you like to to receive alerts about?</div>
                     <label>
                         <input type="checkbox" name="notifications" value="free_beer" tabindex="1">Parties with free beer
@@ -173,7 +195,7 @@
                     </label>
                 </div>
 
-                <div class="label_group">
+                <div class="label-group">
                     <div>Phone:</div>
                     <label>
                         <input type="text" class="mini" tabindex="1">
@@ -185,6 +207,18 @@
                         <input type="text" class="mini" tabindex="1">
                     </label>
                 </div>
+
+				<div class="label-group">
+					<label>
+						Username
+						<input type="text" placeholder="Username" tabindex="1">
+					</label>
+					<label> 
+						Password
+						<input type="password" placeholder="Password" tabindex="1">
+					</label>
+				</div>
+
 
             </form>
 
@@ -207,7 +241,7 @@
             </form>
 
             <h4>Inline form with inline help</h4>
-            <form class="inline_form">
+            <form class="form-horizontal">
                 <label>
                     <div>Name</div>
                     <input type="text" placeholder="Name" tabindex="1">
@@ -221,7 +255,7 @@
             </form>
 
             <h4>Inline form with help below</h4>
-            <form class="inline_form help_below">
+            <form class="form-horizontal help_below">
                 <label>
                     <div>Name</div>
                     <input type="text" placeholder="Name" tabindex="1">
@@ -247,7 +281,7 @@
                     <span class="hint">Must be a valid email address</span>
                 </label>
             </form>
-            <form class="inline_form">
+            <form class="form-horizontal">
                 <label>
                     <div>Name</div>
                     <input type="text" placeholder="Name" tabindex="1">
@@ -262,7 +296,7 @@
 
             <hr>
             <h3>Dimensions</h3>
-            <form class="inline_form">
+            <form class="form-horizontal">
                 <label>
                     <div>Span 1</div>
                     <input type="text" placeholder="12" tabindex="1" class="span1">
@@ -321,7 +355,7 @@
             <hr>
             <h3>Prepended and appended inputs</h3>
 
-            <form class="inline_form">
+            <form class="form-horizontal">
 
                 <h4>Prepend</h4>
                 <label>
@@ -359,9 +393,8 @@
 
             <hr>
             <h3>Search</h3>
-            <form class="search_form">
+            <form>
                 <label>
-                    Search images
                     <input type="search" placeholder="Search here..." tabindex="1">
                     <button type="submit">Go</button>
                 </label>
@@ -369,8 +402,8 @@
 
 
             <hr>
-            <form class="inline_form">
-                <div class="label_group">
+            <form class="form-horizontal">
+                <div class="label-group">
                     <div>Phone no.</div>
                     <label>
                         <i class="prepend">+</i>
@@ -404,7 +437,7 @@
             </form>
 
 
-            <form class="inline_form">
+            <form class="form-horizontal">
                 <label class="error">
                     <div>Email address</div>
                     <input type="email" value="bob@something.domain" tabindex="1">
@@ -412,8 +445,8 @@
                 </label>
             </form>
 
-            <form class="inline_form">
-                <div class="label_group error">
+            <form class="form-horizontal">
+                <div class="label-group error">
                     <div>Phone no.</div>
                     <label>
                         <i class="prepend">+</i>

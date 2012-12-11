@@ -1,58 +1,58 @@
-@import "../variables";
-
 /*@group inline form */
-.inline_form label > div,
-.inline_form .label_group > div {
+.form-horizontal label > div,
+.form-horizontal .label-group > div {
 	width: 130px;
 	float: left;
 	text-align: right;
 	padding-right: 10px;
-	line-height: $line-height*2;
+	line-height: 34px;
 }
-.inline_form label input,
-.inline_form label select {
+.form-horizontal label input,
+.form-horizontal label select {
 	display: inline-block;
 }
-.inline_form .label_group label,
-.label_group.inline label {
+.form-horizontal .label-group label,
+.label-group.inline label {
 	display: inline;
 	line-height: $line-height*2;
 }
+.label-group.inline label input {
+	margin-top: 0;
+}
 /* by default webkit select is a lot shorter and sits higher up */
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-	.inline_form select {
+	.form-horizontal select {
 		margin-top: $line-height/2;
 	}
 }
 /*@group clear and vertical*/
 /*The explanation for the label group is full width and sitting above the labels. This is useful when the explanation is long*/
-.inline_form .input_below div,
-.inline_form .stacked div {
+.form-horizontal .input_below div,
+.form-horizontal .stacked div {
 	width: 100%;
 	text-align: left;
 }
-.inline_form .input_below label,
-.inline_form .stacked label {
+.form-horizontal .input_below label,
+.form-horizontal .stacked label {
 	line-height: $line-height;
 }
-.inline_form .stacked label {
+.form-horizontal .stacked label {
 	display: table;
 }
 /*@end clear */
-.inline_form input[type="text"],
-.inline_form input[type="password"],
-.inline_form input[type="email"],
+.form-horizontal input[type="text"],
+.form-horizontal input[type="password"],
+.form-horizontal input[type="email"],
 input[type="search"] {
 	display: inline;
 }
-.inline_form .label_group label input {
+.form-horizontal .label-group label input {
 	float: none;
 }
-.inline_form label span {
-	line-height: $line-height*2;
+.form-horizontal label span {
 	margin-left: 5px;
 }
-.inline_form.help_below label span {
+.form-horizontal.help_below label span {
 	display: block;
 	clear: both;
 	line-height: inherit;

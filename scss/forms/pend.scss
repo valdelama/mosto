@@ -2,11 +2,12 @@
 .prepend,
 .append {
 	background: #f9f9f9;
-	display: inline;	
+	display: inline;
 	border: 1px solid #cccccc;
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
 	padding: 5px 8px 6px;
-	vertical-align: middle;		
+	*padding-bottom: 4px;
+	vertical-align: middle;
 }
 .prepend {
 	border-right: none;

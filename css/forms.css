@@ -7,18 +7,18 @@ form {
   margin-bottom: 18px; }
 
 label,
-.label_group {
+.label-group {
   display: block;
   margin-bottom: 10px;
   padding: 5px;
   overflow: hidden; }
 
-.label_group label {
+.label-group label {
   margin-bottom: 3px;
   padding: 2px 0 0 0;
   color: #777777; }
 
-.label_group label:first-of-type {
+.label-group label:first-of-type {
   margin-top: 3px; }
 
 input[type="radio"],
@@ -108,56 +108,58 @@ label span {
 
 /*@end basic */
 /*@group inline form */
-.inline_form label > div,
-.inline_form .label_group > div {
+.form-horizontal label > div,
+.form-horizontal .label-group > div {
   width: 130px;
   float: left;
   text-align: right;
   padding-right: 10px;
-  line-height: 36px; }
+  line-height: 34px; }
 
-.inline_form label input,
-.inline_form label select {
+.form-horizontal label input,
+.form-horizontal label select {
   display: inline-block; }
 
-.inline_form .label_group label,
-.label_group.inline label {
+.form-horizontal .label-group label,
+.label-group.inline label {
   display: inline;
   line-height: 36px; }
 
+.label-group.inline label input {
+  margin-top: 0; }
+
 /* by default webkit select is a lot shorter and sits higher up */
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-  .inline_form select {
+  .form-horizontal select {
     margin-top: 9px; } }
 /*@group clear and vertical*/
 /*The explanation for the label group is full width and sitting above the labels. This is useful when the explanation is long*/
-.inline_form .input_below div,
-.inline_form .stacked div {
+.form-horizontal .input_below div,
+.form-horizontal .stacked div {
   width: 100%;
   text-align: left; }
 
-.inline_form .input_below label,
-.inline_form .stacked label {
+.form-horizontal .input_below label,
+.form-horizontal .stacked label {
   line-height: 18px; }
 
-.inline_form .stacked label {
+.form-horizontal .stacked label {
   display: table; }
 
 /*@end clear */
-.inline_form input[type="text"],
-.inline_form input[type="password"],
-.inline_form input[type="email"],
+.form-horizontal input[type="text"],
+.form-horizontal input[type="password"],
+.form-horizontal input[type="email"],
 input[type="search"] {
   display: inline; }
 
-.inline_form .label_group label input {
+.form-horizontal .label-group label input {
   float: none; }
 
-.inline_form label span {
-  line-height: 36px;
+.form-horizontal label span {
   margin-left: 5px; }
 
-.inline_form.help_below label span {
+.form-horizontal.help_below label span {
   display: block;
   clear: both;
   line-height: inherit;
@@ -166,18 +168,18 @@ input[type="search"] {
 /*@end inline form */
 /*@group hint*/
 label span.hint {
+  position: absolute;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-  opacity: 0;
-  position: absolute; }
-
-label.error span.hint {
-  opacity: 1; }
+  opacity: 0; }
 
 label.error span.hint,
 input:focus + span.hint {
   opacity: 1; }
+
+.form-horizontal label span.hint {
+  line-height: 34px; }
 
 /*@end hint*/
 /*@group prepend & apend */
@@ -188,6 +190,7 @@ input:focus + span.hint {
   border: 1px solid #cccccc;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
   padding: 5px 8px 6px;
+  *padding-bottom: 4px;
   vertical-align: middle; }
 
 .prepend {
