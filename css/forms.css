@@ -159,7 +159,7 @@ input[type="search"] {
 .form-horizontal label span {
   margin-left: 5px; }
 
-.form-horizontal.help_below label span {
+.form-horizontal.help-below label span {
   display: block;
   clear: both;
   line-height: inherit;

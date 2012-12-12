@@ -48,7 +48,7 @@ input[type="search"] {
   line-height: 36px;
   margin-left: 5px; }
 
-.inline_form.help_below label span {
+.inline_form.help-below label span {
   display: block;
   clear: both;
   line-height: inherit;
