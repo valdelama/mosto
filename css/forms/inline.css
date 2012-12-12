@@ -22,12 +22,12 @@
     margin-top: 9px; } }
 /*@group clear and vertical*/
 /*The explanation for the label group is full width and sitting above the labels. This is useful when the explanation is long*/
-.inline_form .input_below div,
+.inline_form .input-below div,
 .inline_form .stacked div {
   width: 100%;
   text-align: left; }
 
-.inline_form .input_below label,
+.inline_form .input-below label,
 .inline_form .stacked label {
   line-height: 18px; }
 

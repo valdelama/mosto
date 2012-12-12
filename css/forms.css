@@ -134,12 +134,12 @@ label span {
     margin-top: 9px; } }
 /*@group clear and vertical*/
 /*The explanation for the label group is full width and sitting above the labels. This is useful when the explanation is long*/
-.form-horizontal .input_below div,
+.form-horizontal .input-below div,
 .form-horizontal .stacked div {
   width: 100%;
   text-align: left; }
 
-.form-horizontal .input_below label,
+.form-horizontal .input-below label,
 .form-horizontal .stacked label {
   line-height: 18px; }
 
