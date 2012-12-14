@@ -1,24 +1,24 @@
 // FSK forms
 // =============
-@import "variables";
+@import "variables.scss";
 
 // all forms need this to work
-@import "forms/basic";
+@import "basic.scss";
 
 // only required for labels and inputs all on the same line
-@import "forms/inline";
+@import "inline.scss";
 
 // form hints appear on :focus
-@import "forms/hint";
+@import "hint.scss";
 
 // prepended and appended input elements eg. a dollar sign before the input
-@import "forms/pend";
+@import "pend.scss";
 
 // only required for search forms
-@import "forms/search";
+@import "search.scss";
 
 // error messages
-@import "forms/errors";
+@import "errors.scss";
 
 // different size inputs
-@import "forms/dimensions";
+@import "dimensions.scss";

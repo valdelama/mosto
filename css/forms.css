@@ -1,30 +1,36 @@
 /*@group basic*/
 i {
   font-style: normal;
-  /*used for *pend*/ }
+  /*used for *pend*/
+}
 
 form {
-  margin-bottom: 18px; }
+  margin-bottom: 18px;
+}
 
 label,
 .label-group {
   display: block;
   margin-bottom: 10px;
   padding: 5px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .label-group label {
   margin-bottom: 3px;
   padding: 2px 0 0 0;
-  color: #777777; }
+  color: #777777;
+}
 
 .label-group label:first-of-type {
-  margin-top: 3px; }
+  margin-top: 3px;
+}
 
 input[type="radio"],
 input[type="checkbox"] {
   margin: 0 5px;
-  vertical-align: text-top; }
+  vertical-align: text-top;
+}
 
 select,
 select[multiple],
@@ -40,15 +46,18 @@ input[type="search"] {
   padding: 4px;
   margin: 3px 0;
   width: 210px;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 textarea {
   height: auto;
   min-height: 60px;
-  width: 240px; }
+  width: 240px;
+}
 
 input[type="number"] {
-  width: 60px; }
+  width: 60px;
+}
 
 textarea,
 input[type="text"],
@@ -62,7 +71,8 @@ select[size] {
   border: 1px solid #cccccc;
   border-radius: 3px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
-  transition: all linear 0.2s; }
+  transition: all linear 0.2s;
+}
 
 textarea:focus,
 input[type="text"]:focus,
@@ -72,39 +82,52 @@ input[type="number"]:focus,
 input[type="search"]:focus {
   border-color: #a9a9a9;
   outline: 0;
-  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2); }
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2);
+}
 
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
 input[type="radio"],
 input[type="checkbox"] {
-  width: auto; }
+  width: auto;
+}
 
 select {
-  width: 220px; }
+  width: 220px;
+}
 
 select,
 input[type="file"] {
   height: 28px;
-  line-height: 28px; }
+  line-height: 28px;
+}
 
 select[multiple],
 select[size] {
-  height: auto; }
+  height: auto;
+}
 
 input:-moz-placeholder {
-  color: #999999; }
+  color: #999999;
+}
 
 :-ms-input-placeholder {
-  color: #999999; }
+  color: #999999;
+}
 
 ::-webkit-input-placeholder {
-  color: #999999; }
+  color: #999999;
+}
 
 label span {
   color: #999999;
-  font-size: 12px; }
+  font-size: 12px;
+}
+
+.help-inline label input {
+  display: inline;
+}
 
 /*@end basic */
 /*@group inline form */
@@ -114,56 +137,69 @@ label span {
   float: left;
   text-align: right;
   padding-right: 10px;
-  line-height: 34px; }
+  line-height: 34px;
+}
 
 .form-horizontal label input,
 .form-horizontal label select {
-  display: inline-block; }
+  display: inline-block;
+}
 
 .form-horizontal .label-group label,
 .label-group.inline label {
   display: inline;
-  line-height: 36px; }
+  line-height: 36px;
+}
 
 .label-group.inline label input {
-  margin-top: 0; }
+  margin-top: 0;
+}
 
 /* by default webkit select is a lot shorter and sits higher up */
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   .form-horizontal select {
-    margin-top: 9px; } }
+    margin-top: 9px;
+  }
+}
 /*@group clear and vertical*/
 /*The explanation for the label group is full width and sitting above the labels. This is useful when the explanation is long*/
 .form-horizontal .input-below div,
 .form-horizontal .stacked div {
   width: 100%;
-  text-align: left; }
+  text-align: left;
+}
 
 .form-horizontal .input-below label,
 .form-horizontal .stacked label {
-  line-height: 18px; }
+  line-height: 18px;
+}
 
 .form-horizontal .stacked label {
-  display: table; }
+  display: table;
+}
 
 /*@end clear */
 .form-horizontal input[type="text"],
 .form-horizontal input[type="password"],
 .form-horizontal input[type="email"],
 input[type="search"] {
-  display: inline; }
+  display: inline;
+}
 
 .form-horizontal .label-group label input {
-  float: none; }
+  float: none;
+}
 
 .form-horizontal label span {
-  margin-left: 5px; }
+  margin-left: 5px;
+}
 
 .form-horizontal.help-below label span {
   display: block;
   clear: both;
   line-height: inherit;
-  margin-left: 145px; }
+  margin-left: 145px;
+}
 
 /*@end inline form */
 /*@group hint*/
@@ -172,14 +208,17 @@ label span.hint {
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-  opacity: 0; }
+  opacity: 0;
+}
 
 label.error span.hint,
 input:focus + span.hint {
-  opacity: 1; }
+  opacity: 1;
+}
 
 .form-horizontal label span.hint {
-  line-height: 34px; }
+  line-height: 34px;
+}
 
 /*@end hint*/
 /*@group prepend & apend */
@@ -191,32 +230,43 @@ input:focus + span.hint {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
   padding: 5px 8px 6px;
   *padding-bottom: 4px;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 .prepend {
   border-right: none;
-  margin-right: -4px; }
+  margin-right: -4px;
+}
+
+.prepend + input {
+  display: inline;
+}
 
 .append {
   border-left: none;
-  margin-left: -4px; }
+  margin-left: -4px;
+}
 
 .prepend + input,
 .append {
-  border-radius: 0 3px 3px 0; }
+  border-radius: 0 3px 3px 0;
+}
 
 input.appended,
 .prepend {
-  border-radius: 3px 0 0 3px; }
+  border-radius: 3px 0 0 3px;
+}
 
 .prepend + input.appended {
-  border-radius: 0; }
+  border-radius: 0;
+}
 
 /*@end prepend & apend */
 /*@group search */
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+}
 
 input[type="search"],
 input[type="search"]:focus {
@@ -230,7 +280,8 @@ input[type="search"]:focus {
   border-right: none;
   outline: none;
   padding-left: 10px;
-  margin: 0 -4px 0 3px; }
+  margin: 0 -4px 0 3px;
+}
 
 input[type="search"] + button[type="submit"] {
   display: inline-block;
@@ -240,66 +291,84 @@ input[type="search"] + button[type="submit"] {
   border: 1px solid #ccc;
   background: #fafafa;
   border-radius: 0 15px 15px 0;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 input.search + button[type="submit"]:hover {
-  background: #f5f5f5; }
+  background: #f5f5f5;
+}
 
 /*@end search */
 /*@group errors */
 .error,
 .error span {
-  color: #d60000; }
+  color: #d60000;
+}
 
 .error input {
-  color: #d68181; }
+  color: #d68181;
+}
 
 .error ::-webkit-input-placeholder {
-  color: #d68181; }
+  color: #d68181;
+}
 
 .error :-moz-placeholder {
-  color: #d68181; }
+  color: #d68181;
+}
 
 /*@end errors */
 /*@group dimensions*/
 /*@group specific*/
 label .span1 {
-  width: 16px; }
+  width: 16px;
+}
 
 label .span2 {
-  width: 32px; }
+  width: 32px;
+}
 
 label .span3 {
-  width: 48px; }
+  width: 48px;
+}
 
 label .span4 {
-  width: 64px; }
+  width: 64px;
+}
 
 label .span5 {
-  width: 80px; }
+  width: 80px;
+}
 
 label .span6 {
-  width: 96px; }
+  width: 96px;
+}
 
 label .span7 {
-  width: 112px; }
+  width: 112px;
+}
 
 label .span8 {
-  width: 128px; }
+  width: 128px;
+}
 
 /*@end specific*/
 /*@group simple */
 label .mini {
-  width: 70px; }
+  width: 70px;
+}
 
 label .small {
-  width: 140px; }
+  width: 140px;
+}
 
 label .large {
-  width: 280px; }
+  width: 280px;
+}
 
 label .xl {
-  width: 350px; }
+  width: 350px;
+}
 
 /*@end simple */
 /*@end dimensions*/
