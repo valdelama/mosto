@@ -97,6 +97,12 @@ select {
   width: 220px;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  select {
+    border: 1px solid #cccccc;
+    color: #444;
+  }
+}
 select,
 input[type="file"] {
   height: 28px;
@@ -120,7 +126,7 @@ input:-moz-placeholder {
   color: #999999;
 }
 
-label span {
+label .message {
   color: #999999;
   font-size: 12px;
 }
@@ -155,12 +161,6 @@ label span {
   margin-top: 0;
 }
 
-/* by default webkit select is a lot shorter and sits higher up */
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  .form-horizontal select {
-    margin-top: 9px;
-  }
-}
 /*@group clear and vertical*/
 /*The explanation for the label group is full width and sitting above the labels. This is useful when the explanation is long*/
 .form-horizontal .input-below div,
@@ -170,6 +170,7 @@ label span {
 }
 
 .form-horizontal .input-below label,
+.form-horizontal label.input-below div,
 .form-horizontal .stacked label {
   line-height: 18px;
 }
@@ -190,11 +191,7 @@ input[type="search"] {
   float: none;
 }
 
-.form-horizontal label span {
-  margin-left: 5px;
-}
-
-.form-horizontal.help-below label span {
+.form-horizontal.message-below label .message {
   display: block;
   clear: both;
   line-height: inherit;
@@ -203,7 +200,7 @@ input[type="search"] {
 
 /*@end inline form */
 /*@group hint*/
-label span.hint {
+label .message.hint {
   position: absolute;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
@@ -211,12 +208,12 @@ label span.hint {
   opacity: 0;
 }
 
-label.error span.hint,
-input:focus + span.hint {
+label.error .message.hint,
+input:focus + .message.hint {
   opacity: 1;
 }
 
-.form-horizontal label span.hint {
+.form-horizontal label .message.hint {
   line-height: 34px;
 }
 
@@ -301,7 +298,7 @@ input.search + button[type="submit"]:hover {
 /*@end search */
 /*@group errors */
 .error,
-.error span {
+.error .message {
   color: #d60000;
 }
 
