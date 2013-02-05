@@ -1,0 +1,29 @@
+$line-height: 18px;
+
+$link_color: #0199d2;
+$white: #fff;
+$lighter-grey: #ccc;
+$light-grey: #999;
+$grey: #777;
+$dark-grey: #444;
+$darker-grey: #222;
+$blue: #0199d2;
+
+$radius: 3px;
+
+$form-base-width: 16px;
+
+$btn_start: #fff;
+$btn_stop: #f5f5f5;
+$btn_hover_start: #f5f5f5;
+$btn_hover_stop: #f5f5f5;
+
+//Primary Button Normal
+$btn_primary_color: darken($white, 10%); //text color
+$btn_primary_start: #02a0d9;
+$btn_primary_stop: darken($btn_primary_start, 15%);
+
+//Primary Button Hover
+$btn_primary_hover_color: $white;
+$btn_primary_hover_start: $btn_primary_stop;
+$btn_primary_hover_stop: $btn_primary_stop;

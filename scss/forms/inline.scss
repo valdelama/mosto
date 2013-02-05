@@ -1,0 +1,54 @@
+/*@group inline form */
+.form-horizontal label > div,
+.form-horizontal .label-group > div {
+	width: 130px;
+	text-align: right;
+	padding-right: 3px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.form-horizontal label input,
+.form-horizontal label select {
+	display: inline-block;
+}
+.form-horizontal .label-group label,
+.label-group.inline label {
+	display: inline;
+	line-height: $line-height*2;
+}
+.label-group.inline label input {
+	margin-top: 0;
+}
+/*@group clear and vertical*/
+/*The explanation for the label group is full width and sitting above the labels. This is useful when the explanation is long*/
+.form-horizontal .input-below div,
+.form-horizontal .stacked div {
+	width: 100%;
+	text-align: left;
+	margin-bottom: 3px;
+}
+.form-horizontal .input-below label,
+.form-horizontal label.input-below div,
+.form-horizontal .stacked label {
+	line-height: $line-height;
+}
+.form-horizontal .stacked label {
+	display: table;
+}
+/*@end clear */
+.form-horizontal input[type="text"],
+.form-horizontal input[type="password"],
+.form-horizontal input[type="email"],
+input[type="search"] {
+	display: inline;
+}
+.form-horizontal .label-group label input {
+	float: none;
+}
+.form-horizontal.message-below label .message {
+	display: block;
+	clear: both;
+	line-height: inherit;
+	margin-left: 145px;
+}
+/*@end inline form */

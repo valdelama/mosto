@@ -1,27 +1,24 @@
-//import the files from the Mosto framework
-//replace the variables.scss with your own
-
 // FSK forms
 // =============
-@import "fw_variables.scss";
+@import "variables";
 
 // all forms need this to work
-@import "basic.scss";
+@import "forms/basic";
 
 // only required for labels and inputs all on the same line
-@import "inline.scss";
+@import "forms/inline";
 
 // form hints appear on :focus
-@import "hint.scss";
+@import "forms/hint";
 
 // prepended and appended input elements eg. a dollar sign before the input
-@import "pend.scss";
+@import "forms/pend";
 
 // only required for search forms
-@import "search.scss";
+@import "forms/search";
 
 // error messages
-@import "errors.scss";
+@import "forms/errors";
 
 // different size inputs
-@import "dimensions.scss";
+@import "forms/dimensions";

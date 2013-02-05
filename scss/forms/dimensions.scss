@@ -1,0 +1,54 @@
+/*@group dimensions*/
+/*@group specific*/
+label .span1 {
+	width: $form-base-width;
+}
+label .span2 {
+	width: $form-base-width*2;
+}
+label .span3 {
+	width: $form-base-width*3;
+}
+label .span4 {
+	width: $form-base-width*4;
+}
+label .span5 {
+	width: $form-base-width*5;
+}
+label .span6 {
+	width: $form-base-width*6;
+}
+label .span7 {
+	width: $form-base-width*7;
+}
+label .span8 {
+	width: $form-base-width*8;
+}
+label .span9 {
+	width: $form-base-width*9;
+}
+label .span10 {
+	width: $form-base-width*10;
+}
+label .span11 {
+	width: $form-base-width*11;
+}
+label .span12 {
+	width: $form-base-width*12;
+}
+/*@end specific*/
+/*@group simple */
+label .mini {
+	width: 70px;
+}
+label .small {
+	width: 140px;
+}
+label .large {
+	width: 280px;
+}
+label .xl {
+	width: 350px;
+}
+/*@end simple */
+/*@end dimensions*/
