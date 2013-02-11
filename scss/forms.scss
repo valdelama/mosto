@@ -1,6 +1,7 @@
 // FSK forms
 // =============
 @import "variables";
+@import "mixins";
 
 // all forms need this to work
 @import "forms/basic";
@@ -22,3 +23,9 @@
 
 // different size inputs
 @import "forms/dimensions";
+
+//basic button class
+/*@group buttons*/
+@import "buttons/basic.scss";
+@import "buttons/primary.scss";
+/*@end buttons*/

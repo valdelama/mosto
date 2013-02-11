@@ -110,4 +110,18 @@ label .message {
 .help-inline label input {
 	display: inline;
 }
+.label-group label:first-child {
+	margin-top: 9px;
+}
+.submit-wrapper {
+	width: 220px;
+	padding: 20px 0;
+	overflow: hidden;
+}
+.submit-wrapper .button {
+	float: right;
+}
+.submit-wrapper .button.primary {
+	margin-left: 10px;
+}
 /*@end basic */

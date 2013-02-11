@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
-	    <title>Forms</title>
+	    <title>MOSTOs Forms</title>
 
-		<!-- 1140 grid - more info at http://cssgrid.net/ -->
-	    <link href="css/grid/1140.css" rel="stylesheet">
-        <link href="css/grid/ie.css" rel="stylesheet">
-
-		<!-- FSK components -->
+		<!-- MOSTO components -->
 	    <link href="css/type.css" rel="stylesheet">
 	    <link href="css/buttons.css" rel="stylesheet">
         <link href="css/forms.css" rel="stylesheet">
 
-		<!-- demo site specific -->
-		<link href="css/styles.css" rel="stylesheet">
+		<!-- Just some styles for the demo -->
+		<style>
+			.container {
+				width: 100%;
+				margin: 18px auto;
+				padding: 0 20px;
+			}
 
+			hr {
+				margin: 36px 0;
+				border: none;
+				height: 1px;
+				color: #eee;
+				background: #ccc;
+			}
+
+			h3,h4,h5 {
+				margin: 18px 0 9px;
+			}
+		</style>
 
 		<!-- Do something with this crap! -->
 		<!--[if lt IE 9]>
@@ -29,11 +42,14 @@
 	</head>
 
     <body>
-        <div class="container content">
-            <h1>Forms</h1>
 
-            <h3>Basic Form - <small>All inputs below the labels</small></h3>
-            <form>
+        <div class="container content">
+
+		    <h1>MOSTO Forms</h1>
+
+            <h3>Basic "Stacked" Form - <small>All inputs below the labels</small></h3>
+
+		    <form>
 
                 <label>
                     Name
@@ -48,23 +64,6 @@
                 <label>
                     Your message
                     <textarea tabindex="1"></textarea>
-                </label>
-
-                <label>
-                    <input type="checkbox" tabindex="1">Accept the terms and conditions
-                </label>
-
-                <label>
-                    Favourite beer
-                    <select tabindex="1">
-                        <option>Heineken</option>
-                        <option>Carlsberg</option>
-                        <option>Stella Artois</option>
-                        <option>Cronenberg</option>
-                        <option>Guiness</option>
-                        <option>Amstel</option>
-                        <option>Corona</option>
-                    </select>
                 </label>
 
                 <div class="label-group">
@@ -96,43 +95,22 @@
                     </label>
                 </div>
 
-                <div class="label-group inline">
-                    Which is better?
-                    <label>
-                        <input type="radio" name="cartoons" value="simpsons" tabindex="1">The Simpsons
-                    </label>
-                    <label>
-                        <input type="radio" name="cartoons" value="family_guy" tabindex="1">Family Guy
-                    </label>
-                    <label>
-                        <input type="radio" name="cartoons" value="southpark" tabindex="1">Southpark
-                    </label>
-                </div>
+				<label>
+                    Favourite beer
+                    <select tabindex="1">
+                        <option>Heineken</option>
+                        <option>Carlsberg</option>
+                        <option>Stella Artois</option>
+                        <option>Cronenberg</option>
+                        <option>Guiness</option>
+                        <option>Amstel</option>
+                        <option>Corona</option>
+                    </select>
+                </label>
 
-				<div class="label-group inline">
-					<label>
-						Username
-						<input type="text" placeholder="Username" tabindex="1">
-					</label>
-					<label>
-						Password
-						<input type="password" placeholder="Password" tabindex="1">
-					</label>
-				</div>
-
-				<div class="label-group inline">
-					<label>
-						Day
-						<select>
-							<option>Monday</option>
-						</select>
-					</label>
-					<label>
-						Month
-						<select>
-							<option>January</option>
-						</select>
-					</label>
+				<div class="submit-wrapper">
+					<button type="submit" class="button primary">Send</button>
+					<a href="#" class="button">Cancel</a>
 				</div>
 
             </form>
@@ -140,6 +118,7 @@
             <hr>
 
             <h3>Horizontal form - <small>All inputs and labels inline</small></h3>
+
             <form class="form-horizontal">
 
                 <label>
@@ -183,83 +162,19 @@
                     </label>
                 </div>
 
-				<label class="input-below">
-                    <div>Which of the following beers is your favourite?</div>
-                    <select tabindex="1">
-                        <option>Heineken</option>
-                        <option>Carlsberg</option>
-                        <option>Stella Artois</option>
-                        <option>Cronenberg</option>
-                        <option>Guiness</option>
-                        <option>Amstel</option>
-                        <option>Corona</option>
-                    </select>
-                </label>
-
-                <div class="label-group input-below">
-                    <div>What kind of things would you like to to receive alerts about?</div>
-                    <label>
-                        <input type="checkbox" name="notifications" value="free_beer" tabindex="1">Parties with free beer
-                    </label>
-                    <label>
-                        <input type="checkbox" name="notifications" value="monkey" tabindex="1">Car keys with built-in GPS tracking
-                    </label>
-                    <label>
-                        <input type="checkbox" name="notifications" value="monkey" tabindex="1">Smart phone apps to help you find your car
-                    </label>
-                    <label>
-                        <input type="checkbox" name="notifications" value="giveaway" tabindex="1">Self driving cars for returning from events with free beer
-                    </label>
-                </div>
-
-                <div class="label-group stacked">
-                    <div>What kind of things would you like to to receive alerts about?</div>
-                    <label>
-                        <input type="checkbox" name="notifications" value="free_beer" tabindex="1">Parties with free beer
-                    </label>
-                    <label>
-                        <input type="checkbox" name="notifications" value="monkey" tabindex="1">Car keys with built-in GPS tracking
-                    </label>
-                    <label>
-                        <input type="checkbox" name="notifications" value="monkey" tabindex="1">Smart phone apps to help you find your car
-                    </label>
-                    <label>
-                        <input type="checkbox" name="notifications" value="giveaway" tabindex="1">Self driving cars for returning from events with free beer
-                    </label>
-                </div>
-
-                <div class="label-group">
-                    <div>Phone:</div>
-                    <label>
-                        <input type="text" class="mini" tabindex="1">
-                    </label>
-                    <label>
-                        <input type="text" class="mini" tabindex="1">
-                    </label>
-                    <label>
-                        <input type="text" class="mini" tabindex="1">
-                    </label>
-                </div>
-
-				<div class="label-group">
-					<label>
-						Username
-						<input type="text" placeholder="Username" tabindex="1">
-					</label>
-					<label>
-						Password
-						<input type="password" placeholder="Password" tabindex="1">
-					</label>
+				<div class="submit-wrapper">
+					<button type="submit" class="button primary">Send</button>
+					<a href="#" class="button">Cancel</a>
 				</div>
 
-
-            </form>
+			</form>
 
             <hr>
 
             <h3>Help messages - <small>form  hints</small></h3>
 
-            <h4>Basic</h4>
+            <h4>Stacked</h4>
+
             <form>
                 <label>
                     Name
@@ -273,7 +188,7 @@
                 </label>
             </form>
 
-			<h5>Stacked with messages inline</h5>
+			<h4>Stacked with messages inline</h4>
 			<form class="help-inline">
                 <label>
                     <div>Name</div>
@@ -287,7 +202,7 @@
                 </label>
             </form>
 
-            <h4>Inline form with inline help</h4>
+            <h4>Horizontal form</h4>
             <form class="form-horizontal">
                 <label>
                     <div>Name</div>
@@ -301,7 +216,7 @@
                 </label>
             </form>
 
-            <h4>Inline form with help below</h4>
+            <h4>Horizontal form with help below</h4>
             <form class="form-horizontal message-below">
                 <label>
                     <div>Name</div>
@@ -452,31 +367,6 @@
                     <i class="append">.00</i>
                     <span class="message">How much would you like to donate?<span>
                 </label>
-			</form>
-
-			<form>
-				<h4>Both with a stacked form</h4>
-                <label>
-                    <div>Amount</div>
-                    <i class="prepend">$</i>
-                    <input type="text" placeholder="Amount" tabindex="1" class="appended span3">
-                    <i class="append">.00</i>
-                    <span class="message">How much would you like to donate?<span>
-                </label>
-            </form>
-
-            <hr>
-            <h3>Search</h3>
-            <form>
-                <label>
-                    <input type="search" class="search-input" placeholder="Search here..." tabindex="1">
-                    <button type="submit" class="search-submit">Go</button>
-                </label>
-            </form>
-
-
-            <hr>
-            <form class="form-horizontal">
                 <div class="label-group">
                     <div>Phone no.</div>
                     <label>
@@ -497,12 +387,36 @@
                         <i class="append">ext.</i>
                     </label>
                 </div>
+			</form>
+
+			<form>
+				<h4>Stacked form</h4>
+                <label>
+                    <div>Amount</div>
+                    <i class="prepend">$</i>
+                    <input type="text" placeholder="Amount" tabindex="1" class="appended span3">
+                    <i class="append">.00</i>
+                    <span class="message">How much would you like to donate?<span>
+                </label>
             </form>
+
+            <hr>
+            <h3>Search</h3>
+            <form>
+                <label>
+                    <input type="search" class="search-input" placeholder="Search here..." tabindex="1">
+                    <button type="submit" class="search-submit">Go</button>
+                </label>
+            </form>
+
+
+            <hr>
 
 
             <h3>Validation and error messages</h3>
 
-            <form>
+            <h5>Stacked</h5>
+			<form>
                 <label class="error">
                     Email address
                     <input type="email" value="bob@something.domain" tabindex="1">
@@ -510,7 +424,8 @@
                 </label>
             </form>
 
-            <form class="form-horizontal">
+            <h5>Horizontal</h5>
+			<form class="form-horizontal">
                 <label class="error">
                     <div>Email address</div>
                     <input type="email" value="bob@something.domain" tabindex="1">
@@ -541,6 +456,112 @@
                     <span class="message">Please fill in all fields</span>
                 </div>
             </form>
+
+			<h5>Checkbox</h5>
+			<form>
+				<label class="error">
+					<input type="checkbox">I agree to the terms and conditions
+				</label>
+			</form>
+
+			<hr>
+
+			<h3>Exceptions</h3>
+
+			<h4>Stacked form with horizontal inputs</h4>
+
+			<form>
+
+				<div class="label-group inline">
+                    Which is better?
+                    <label>
+                        <input type="radio" name="cartoons" value="simpsons" tabindex="1">The Simpsons
+                    </label>
+                    <label>
+                        <input type="radio" name="cartoons" value="family_guy" tabindex="1">Family Guy
+                    </label>
+                    <label>
+                        <input type="radio" name="cartoons" value="southpark" tabindex="1">Southpark
+                    </label>
+                </div>
+
+				<div class="label-group inline">
+					<label>
+						Username
+						<input type="text" placeholder="Username" class="span8" tabindex="1">
+					</label>
+					<label>
+						Password
+						<input type="password" placeholder="Password" class="span8" tabindex="1">
+					</label>
+				</div>
+
+				<div class="label-group inline">
+					<label>
+						Day
+						<select class="span5">
+							<option>Monday</option>
+						</select>
+					</label>
+					<label>
+						Month
+						<select class="span5">
+							<option>January</option>
+						</select>
+					</label>
+				</div>
+			</form>
+
+			<form class="form-horizontal">
+
+				<h4>Horizontal form with inputs below</h4>
+				<label class="input-below">
+                    <div>Which of the following beers is your favourite?</div>
+                    <select tabindex="1">
+                        <option>Heineken</option>
+                        <option>Carlsberg</option>
+                        <option>Stella Artois</option>
+                        <option>Cronenberg</option>
+                        <option>Guiness</option>
+                        <option>Amstel</option>
+                        <option>Corona</option>
+                    </select>
+                </label>
+
+                <div class="label-group input-below">
+                    <div>What kind of things would you like to to receive alerts about?</div>
+                    <label>
+                        <input type="checkbox" name="notifications" value="free_beer" tabindex="1">Parties with free beer
+                    </label>
+                    <label>
+                        <input type="checkbox" name="notifications" value="monkey" tabindex="1">Car keys with built-in GPS tracking
+                    </label>
+                    <label>
+                        <input type="checkbox" name="notifications" value="monkey" tabindex="1">Smart phone apps to help you find your car
+                    </label>
+                    <label>
+                        <input type="checkbox" name="notifications" value="giveaway" tabindex="1">Self driving cars for returning from events with free beer
+                    </label>
+                </div>
+
+                <h4>Horizontal form with stacked inputs</h4>
+				<div class="label-group stacked">
+                    <div>What kind of things would you like to to receive alerts about?</div>
+                    <label>
+                        <input type="checkbox" name="notifications" value="free_beer" tabindex="1">Parties with free beer
+                    </label>
+                    <label>
+                        <input type="checkbox" name="notifications" value="monkey" tabindex="1">Car keys with built-in GPS tracking
+                    </label>
+                    <label>
+                        <input type="checkbox" name="notifications" value="monkey" tabindex="1">Smart phone apps to help you find your car
+                    </label>
+                    <label>
+                        <input type="checkbox" name="notifications" value="giveaway" tabindex="1">Self driving cars for returning from events with free beer
+                    </label>
+                </div>
+
+			</form>
 
         </div>
     </body>

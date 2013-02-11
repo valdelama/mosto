@@ -130,6 +130,24 @@ label .message {
   display: inline;
 }
 
+.label-group label:first-child {
+  margin-top: 9px;
+}
+
+.submit-wrapper {
+  width: 220px;
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.submit-wrapper .button {
+  float: right;
+}
+
+.submit-wrapper .button.primary {
+  margin-left: 10px;
+}
+
 /*@end basic */
 /*@group inline form */
 .form-horizontal label > div,
@@ -163,7 +181,11 @@ label .message {
 .form-horizontal .stacked div {
   width: 100%;
   text-align: left;
-  margin-bottom: 3px;
+  margin-bottom: 9px;
+}
+
+.form-horizontal .input-below textarea {
+  width: 350px;
 }
 
 .form-horizontal .input-below label,
@@ -193,6 +215,15 @@ input[type="search"] {
   clear: both;
   line-height: inherit;
   margin-left: 145px;
+}
+
+.form-horizontal .label-group label:first-child,
+.inline.label-group label:first-child {
+  margin-top: inherit;
+}
+
+.form-horizontal .submit-wrapper {
+  width: 360px;
 }
 
 /*@end inline form */
@@ -391,3 +422,65 @@ label [class*="span"] {
 }
 
 /*@end dimensions*/
+/*@group buttons*/
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #222222;
+  text-align: center;
+  line-height: 18px;
+  text-decoration: none;
+  cursor: pointer;
+  background: #f9f9f9;
+  background: -moz-linear-gradient(top, #f5f5f5 0%, #f9f9f9 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f5f5f5), color-stop(100%, #f9f9f9));
+  background: -webkit-linear-gradient(top, #f5f5f5 0%, #f9f9f9 100%);
+  background: -o-linear-gradient(top, #f5f5f5 0%, #f9f9f9 100%);
+  background: -ms-linear-gradient(top, #f5f5f5 0%, #f9f9f9 100%);
+  background: linear-gradient(to bottom, #f5f5f5 0%, #f9f9f9 100%);
+}
+.button:hover {
+  background: #e6e6e6;
+  background: -moz-linear-gradient(top, #f9f9f9 0%, #e6e6e6 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9f9f9), color-stop(100%, #e6e6e6));
+  background: -webkit-linear-gradient(top, #f9f9f9 0%, #e6e6e6 100%);
+  background: -o-linear-gradient(top, #f9f9f9 0%, #e6e6e6 100%);
+  background: -ms-linear-gradient(top, #f9f9f9 0%, #e6e6e6 100%);
+  background: linear-gradient(to bottom, #f9f9f9 0%, #e6e6e6 100%);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.button:active {
+  box-shadow: inset 0 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+.button.primary {
+  background: #01688d;
+  background: -moz-linear-gradient(top, #02a0d9 0%, #01688d 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #02a0d9), color-stop(100%, #01688d));
+  background: -webkit-linear-gradient(top, #02a0d9 0%, #01688d 100%);
+  background: -o-linear-gradient(top, #02a0d9 0%, #01688d 100%);
+  background: -ms-linear-gradient(top, #02a0d9 0%, #01688d 100%);
+  background: linear-gradient(to bottom, #02a0d9 0%, #01688d 100%);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  color: #e6e6e6;
+}
+.button.primary:hover {
+  background: #01688d;
+  background: -moz-linear-gradient(top, #01688d 0%, #01688d 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #01688d), color-stop(100%, #01688d));
+  background: -webkit-linear-gradient(top, #01688d 0%, #01688d 100%);
+  background: -o-linear-gradient(top, #01688d 0%, #01688d 100%);
+  background: -ms-linear-gradient(top, #01688d 0%, #01688d 100%);
+  background: linear-gradient(to bottom, #01688d 0%, #01688d 100%);
+  color: white;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.button.primary:active {
+  box-shadow: inset 0 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+/*@end buttons*/

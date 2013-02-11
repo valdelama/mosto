@@ -26,7 +26,10 @@
 .form-horizontal .stacked div {
 	width: 100%;
 	text-align: left;
-	margin-bottom: 3px;
+	margin-bottom: 9px;
+}
+.form-horizontal .input-below textarea {
+	width: 350px;
 }
 .form-horizontal .input-below label,
 .form-horizontal label.input-below div,
@@ -51,5 +54,12 @@ input[type="search"] {
 	clear: both;
 	line-height: inherit;
 	margin-left: 145px;
+}
+.form-horizontal .label-group label:first-child,
+.inline.label-group label:first-child{
+	margin-top: inherit;
+}
+.form-horizontal .submit-wrapper {
+	width: 360px;
 }
 /*@end inline form */
