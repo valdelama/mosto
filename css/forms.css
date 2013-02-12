@@ -354,51 +354,51 @@ input.search-input + .search-submit {
 /*@end errors */
 /*@group dimensions*/
 /*@group specific*/
-label .span1 {
+label .size1 {
   width: 16px;
 }
 
-label .span2 {
+label .size2 {
   width: 32px;
 }
 
-label .span3 {
+label .size3 {
   width: 48px;
 }
 
-label .span4 {
+label .size4 {
   width: 64px;
 }
 
-label .span5 {
+label .size5 {
   width: 80px;
 }
 
-label .span6 {
+label .size6 {
   width: 96px;
 }
 
-label .span7 {
+label .size7 {
   width: 112px;
 }
 
-label .span8 {
+label .size8 {
   width: 128px;
 }
 
-label .span9 {
+label .size9 {
   width: 144px;
 }
 
-label .span10 {
+label .size10 {
   width: 160px;
 }
 
-label .span11 {
+label .size11 {
   width: 176px;
 }
 
-label .span12 {
+label .size12 {
   width: 192px;
 }
 
