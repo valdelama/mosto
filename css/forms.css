@@ -8,6 +8,10 @@ form {
   margin-bottom: 18px;
 }
 
+form * {
+  margin: 0;
+}
+
 label,
 .label-group {
   display: block;
@@ -142,6 +146,7 @@ label .message {
 
 .submit-wrapper .button {
   float: right;
+  line-height: normal;
 }
 
 .submit-wrapper .button.primary {
