@@ -51,7 +51,4 @@ label .xl {
 	width: 350px;
 }
 /*@end simple */
-label [class*="span"] {
-    float: none; /*stops the bootstrap grid breaking the forms*/
-}
 /*@end dimensions*/
