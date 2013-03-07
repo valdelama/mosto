@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>MOSTOs Forms</title>
+
+        <link href="css/forms.css" rel="stylesheet">
+
+		<!-- Just some styles for the demo -->
+		<style>
+			body {
+				color: #444444;
+				font-family: Arial, Helvetica, Geneva, sans-serif;
+			}
+			.container {
+				width: 500px;
+				margin: 18px 0;
+				padding: 0 20px;
+			}
+
+			hr {
+				margin: 36px 0;
+				border: none;
+				height: 1px;
+				color: #eee;
+				background: #ccc;
+			}
+
+		</style>
+
+		<!-- Do something with this crap! -->
+		<!--[if lt IE 9]>
+			<style>
+				.prepend,
+				.append {
+					padding-bottom: 5px;
+				}
+			</style>
+		<![endif]-->
+
+	</head>
+
+    <body>
+
+        <div class="container content">
+			<form>
+
+				<fieldset>
+					<legend>Account details</legend>
+					<label>
+						Username
+						<input type="text" placeholder="Username" tabindex="1" autofocus="autofocus">
+					</label>
+					<label>
+						Password
+						<input type="password" placeholder="Password" tabindex="1">
+					</label>
+					<label>
+						Repeat password
+						<input type="password" placeholder="Password" tabindex="1">
+					</label>
+					<label>
+						Email address
+						<input type="email" placeholder="Email" tabindex="1">
+					</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Address</legend>
+					<label>
+						First name
+						<input type="text" placeholder="First name" tabindex="1">
+					</label>
+					<label>
+						Last name
+						<input type="text" placeholder="Last name" tabindex="1">
+					</label>
+					<label>
+						Address
+						<textarea placeholder="Address (House number and street)" tabindex="1"></textarea>
+					</label>
+					<label>
+						City
+						<input type="text" placeholder="City" tabindex="1">
+					</label>
+					<label>
+						Postcode
+						<input type="text" placeholder="Postcode" tabindex="1">
+					</label>
+					<label>
+						Country
+						<select tabindex="1">
+							<option>Spain</option>
+							<option>United Kingdom</option>
+						</select>
+					</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Personal information</legend>
+					<div class="label-group inline">
+						<div>Date of birth</div>
+						<label>
+							Day
+							<select tabindex="1" class="size3">
+								<option>1</option>
+							</select>
+						</label>
+						<label>
+							Month
+							<select tabindex="1" class="size5">
+								<option>January</option>
+							</select>
+						</label>
+						<label>
+							Year
+							<select tabindex="1" class="size4">
+								<option>2002</option>
+							</select>
+						</label>
+					</div>
+					<div class="label-group inline">
+						<div>Sex</div>
+						<label>
+							<input type="radio" tabindex="1">
+							Male
+						</label>
+						<label>
+							<input type="radio" tabindex="1">
+							Female
+						</label>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Subscriptions</legend>
+					<div class="label-group">
+						<div>I want to receive information about</div>
+						<label>
+							<input type="checkbox" tabindex="1"> Offers and promotions
+						</label>
+						<label>
+							<input type="checkbox" tabindex="1"> New features
+						</label>
+					</div>
+					<button class="button primary" tabindex="1">Send</button>
+				</fieldset>
+			</form>
+
+        </div>
+    </body>
+</html>

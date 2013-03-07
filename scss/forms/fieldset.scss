@@ -1,0 +1,12 @@
+fieldset {
+	border: none;
+	border-top: 1px solid $lighter-grey;
+	margin: 0 0 $line-height*2 0;
+	padding: $line-height 0 0 0;
+}
+legend {
+	color: $light-grey;
+	padding: 0 $line-height 0 0;
+	font-size: 16px;
+	font-weight: bold;
+}

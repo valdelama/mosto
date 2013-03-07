@@ -24,6 +24,9 @@
 // different size inputs
 @import "forms/dimensions";
 
+// support for fieldsets and legends
+@import "forms/fieldset";
+
 //basic button class
 /*@group buttons*/
 @import "buttons/basic.scss";

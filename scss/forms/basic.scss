@@ -3,6 +3,7 @@ i {
 	font-style: normal; /*used for *pend*/
 }
 form {
+	font: 13px/18px;
 	margin-bottom: $line-height;
 }
 form * {
@@ -15,7 +16,7 @@ label,
 	overflow: hidden;
 }
 .label-group label {
-	margin-bottom: 9px;
+	margin-bottom: $line-height/2;
 	color: $grey;
 }
 input[type="radio"],
@@ -113,8 +114,8 @@ label .message {
 .help-inline label input {
 	display: inline;
 }
-.label-group label:first-child {
-	margin-top: 9px;
+.label-group label:first-of-type {
+	margin-top: $line-height/2;
 }
 .submit-wrapper {
 	width: 220px;

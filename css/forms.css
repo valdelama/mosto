@@ -5,6 +5,7 @@ i {
 }
 
 form {
+  font: 13px/18px;
   margin-bottom: 18px;
 }
 
@@ -134,7 +135,7 @@ label .message {
   display: inline;
 }
 
-.label-group label:first-child {
+.label-group label:first-of-type {
   margin-top: 9px;
 }
 
@@ -222,13 +223,18 @@ input[type="search"] {
   margin-left: 145px;
 }
 
-.form-horizontal .label-group label:first-child,
-.inline.label-group label:first-child {
+.form-horizontal .label-group label:first-of-type,
+.inline.label-group label:first-of-type {
   margin-top: inherit;
 }
 
 .form-horizontal .submit-wrapper {
   width: 360px;
+}
+
+.inline label:not(:first-child),
+.inline .button {
+  margin-left: 18px;
 }
 
 /*@end inline form */
@@ -422,16 +428,30 @@ label .xl {
 
 /*@end simple */
 /*@end dimensions*/
+fieldset {
+  border: none;
+  border-top: 1px solid #cccccc;
+  margin: 0 0 36px 0;
+  padding: 18px 0 0 0;
+}
+
+legend {
+  color: #999999;
+  padding: 0 18px 0 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 /*@group buttons*/
 .button {
   display: inline-block;
-  padding: 8px 16px;
+  padding: 6px 16px;
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: #222222;
   text-align: center;
-  line-height: 18px;
+  line-height: 15px;
   text-decoration: none;
   cursor: pointer;
   background: #f9f9f9;
