@@ -9,7 +9,7 @@
 		<style>
 			body {
 				color: #444444;
-				font-family: Arial, Helvetica, Geneva, sans-serif;
+				font: 13px/18px Arial, Helvetica, Geneva, sans-serif;
 			}
 			.container {
 				width: 100%;
@@ -475,6 +475,25 @@
 					</label>
 					<button type="submit" class="button primary">Log in</button>
 				</div>
+			</form>
+
+			<hr>
+			<h3>Required fields</h3>
+
+			<h4>Stacked form</h4>
+			<form>
+				<label class="required">
+					Email
+					<input type="email" tabindex="1">
+				</label>
+			</form>
+
+			<h4>Horizontal form</h4>
+			<form class="form-horizontal">
+				<label class="required">
+					<div>Email</div>
+					<input type="email" tabindex="1">
+				</label>
 			</form>
 
 			<hr>

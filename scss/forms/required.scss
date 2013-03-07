@@ -1,0 +1,15 @@
+.required:before,
+.form-horizontal .required div:after {
+	content: '*';
+	font-size: 20px;
+}
+.required:before {
+	float: left;
+	margin-right: 2px;
+}
+.form-horizontal .required:before {
+	display: none;
+}
+.form-horizontal .required div:after {
+	margin-left: 2px;
+}

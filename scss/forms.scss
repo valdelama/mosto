@@ -27,6 +27,9 @@
 // support for fieldsets and legends
 @import "forms/fieldset";
 
+// support for required fields
+@import "forms/required";
+
 //basic button class
 /*@group buttons*/
 @import "buttons/basic.scss";
