@@ -235,7 +235,7 @@ input[type="search"] {
   display: block;
   clear: both;
   line-height: inherit;
-  margin-left: 143px;
+  margin-left: 141px;
 }
 
 .form-horizontal .label-group label:first-of-type,
@@ -254,7 +254,7 @@ input[type="search"] {
 
 .form-horizontal button[type="submit"],
 .form-horizontal input[type="submit"] {
-  margin-left: 140px;
+  margin-left: 137px;
 }
 
 /*@end inline form */
