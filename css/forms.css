@@ -39,13 +39,26 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="number"],
-input[type="search"] {
+input[type="search"],
+input[type="date"] {
   display: inherit;
   height: 18px;
   padding: 4px;
   margin: 3px 0;
   width: 210px;
   vertical-align: middle;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="date"] {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 textarea {
@@ -65,7 +78,8 @@ input[type="email"],
 input[type="number"],
 input[type="search"],
 select[multiple],
-select[size] {
+select[size],
+input[type="date"] {
   background-color: #fff;
   border: 1px solid #cccccc;
   border-radius: 3px;
@@ -78,7 +92,8 @@ input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
 input[type="number"]:focus,
-input[type="search"]:focus {
+input[type="search"]:focus,
+input[type="date"]:focus {
   border-color: #a9a9a9;
   outline: 0;
   box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2);
@@ -156,8 +171,8 @@ label .message {
 
 /*@end basic */
 /*@group inline form */
-.form-horizontal label > div,
-.form-horizontal .label-group > div {
+.form-horizontal label > div:first-child,
+.form-horizontal .label-group > div:first-child {
   width: 130px;
   text-align: right;
   padding-right: 3px;
@@ -183,8 +198,8 @@ label .message {
 
 /*@group clear and vertical*/
 /*The explanation for the label group is full width and sitting above the labels. This is useful when the explanation is long*/
-.form-horizontal .input-below div,
-.form-horizontal .stacked div {
+.form-horizontal .input-below div:first-child,
+.form-horizontal .stacked div:first-child {
   width: 100%;
   text-align: left;
   margin-bottom: 9px;
@@ -195,7 +210,7 @@ label .message {
 }
 
 .form-horizontal .input-below label,
-.form-horizontal label.input-below div,
+.form-horizontal label.input-below div:first-child,
 .form-horizontal .stacked label {
   line-height: 18px;
 }
@@ -220,7 +235,7 @@ input[type="search"] {
   display: block;
   clear: both;
   line-height: inherit;
-  margin-left: 145px;
+  margin-left: 143px;
 }
 
 .form-horizontal .label-group label:first-of-type,
@@ -235,6 +250,11 @@ input[type="search"] {
 .inline label:not(:first-child),
 .inline .button {
   margin-left: 18px;
+}
+
+.form-horizontal button[type="submit"],
+.form-horizontal input[type="submit"] {
+  margin-left: 140px;
 }
 
 /*@end inline form */
@@ -266,11 +286,14 @@ input:focus + .message.hint {
   border: 1px solid #cccccc;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
   vertical-align: top;
-  height: 18px;
+  height: 28px;
   padding: 4px 8px;
   margin: 3px 0;
   vertical-align: middle;
-  line-height: 20px;
+  line-height: 19px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .prepend {
@@ -443,9 +466,9 @@ legend {
 }
 
 .required:before,
-.form-horizontal .required div:after {
+.form-horizontal .required div:first-child:after {
   content: '*';
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .required:before {
@@ -457,10 +480,72 @@ legend {
   display: none;
 }
 
-.form-horizontal .required div:after {
+.form-horizontal .required div:first-child:after {
   margin-left: 2px;
 }
 
+@media handheld, only screen and (max-width: 500px) {
+  .form-horizontal label > div:first-child,
+  .form-horizontal .label-group > div:first-child {
+    width: auto;
+    text-align: left;
+    padding-right: 0;
+    display: block;
+  }
+
+  label .message,
+  .label-group .message {
+    display: block;
+    clear: both;
+  }
+
+  .form-horizontal .input-below textarea {
+    width: 350px;
+  }
+
+  .form-horizontal.message-below label .message {
+    margin-left: 0;
+  }
+
+  .form-horizontal .submit-wrapper {
+    width: 220px;
+  }
+
+  .inline label:not(:first-child),
+  .inline .button {
+    margin-left: 0;
+  }
+
+  label .message.hint {
+    opacity: 1;
+    position: static;
+  }
+
+  .form-horizontal label .message.hint {
+    line-height: inherit;
+    margin-left: inherit;
+  }
+
+  label .large,
+  label .xl {
+    width: 280px;
+    max-width: 90%;
+  }
+
+  .prepend,
+  .append {
+    display: inline-block;
+  }
+
+  .form-horizontal .required div:first-child:before {
+    content: '*';
+    font-size: 17px;
+  }
+
+  .form-horizontal .required div:first-child:after {
+    display: none;
+  }
+}
 /*@group buttons*/
 .button {
   display: inline-block;

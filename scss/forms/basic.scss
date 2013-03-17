@@ -32,13 +32,26 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="number"],
-input[type="search"] {
+input[type="search"],
+input[type="date"] {
 	display: inherit;
 	height: $line-height;
 	padding: 4px;
 	margin: 3px 0;
 	width: 210px;
 	vertical-align: middle;
+}
+// in case somebody has set *{box-sizing: border-box;} in their css
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="date"]{
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
 }
 textarea {
 	height: auto;
@@ -55,7 +68,8 @@ input[type="email"],
 input[type="number"],
 input[type="search"],
 select[multiple],
-select[size] {
+select[size],
+input[type="date"] {
 	background-color: #fff;
 	border: 1px solid $lighter-grey;
 	border-radius: $radius;
@@ -67,7 +81,8 @@ input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
 input[type="number"]:focus,
-input[type="search"]:focus {
+input[type="search"]:focus,
+input[type="date"]:focus {
 	border-color: #a9a9a9;
 	outline: 0;
   	box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2);

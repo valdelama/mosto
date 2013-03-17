@@ -1,6 +1,6 @@
 /*@group inline form */
-.form-horizontal label > div,
-.form-horizontal .label-group > div {
+.form-horizontal label > div:first-child,
+.form-horizontal .label-group > div:first-child {
 	width: 130px;
 	text-align: right;
 	padding-right: 3px;
@@ -22,8 +22,8 @@
 }
 /*@group clear and vertical*/
 /*The explanation for the label group is full width and sitting above the labels. This is useful when the explanation is long*/
-.form-horizontal .input-below div,
-.form-horizontal .stacked div {
+.form-horizontal .input-below div:first-child,
+.form-horizontal .stacked div:first-child {
 	width: 100%;
 	text-align: left;
 	margin-bottom: $line-height/2;
@@ -32,7 +32,7 @@
 	width: 350px;
 }
 .form-horizontal .input-below label,
-.form-horizontal label.input-below div,
+.form-horizontal label.input-below div:first-child,
 .form-horizontal .stacked label {
 	line-height: $line-height;
 }
@@ -53,7 +53,7 @@ input[type="search"] {
 	display: block;
 	clear: both;
 	line-height: inherit;
-	margin-left: 145px;
+	margin-left: 143px;
 }
 .form-horizontal .label-group label:first-of-type,
 .inline.label-group label:first-of-type {
@@ -66,4 +66,10 @@ input[type="search"] {
 .inline .button{
 	margin-left: $line-height;
 }
+
+.form-horizontal button[type="submit"],
+.form-horizontal input[type="submit"] {
+	margin-left: 140px;
+}
+
 /*@end inline form */

@@ -1,7 +1,7 @@
 .required:before,
-.form-horizontal .required div:after {
+.form-horizontal .required div:first-child:after {
 	content: '*';
-	font-size: 20px;
+	font-size: 17px;
 }
 .required:before {
 	float: left;
@@ -10,6 +10,6 @@
 .form-horizontal .required:before {
 	display: none;
 }
-.form-horizontal .required div:after {
+.form-horizontal .required div:first-child:after {
 	margin-left: 2px;
 }

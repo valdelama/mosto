@@ -1,0 +1,63 @@
+@media handheld, only screen and (max-width: 500px) {
+	.form-horizontal label > div:first-child,
+	.form-horizontal .label-group > div:first-child {
+		width: auto;
+		text-align: left;
+		padding-right: 0;
+		display: block;
+	}
+
+	label .message,
+	.label-group .message {
+		display: block;
+		clear: both;
+	}
+
+	.form-horizontal .input-below textarea {
+		width: 350px;
+	}
+
+	.form-horizontal.message-below label .message {
+		margin-left: 0;
+	}
+
+	.form-horizontal .submit-wrapper {
+		width: 220px;
+	}
+
+	.inline label:not(:first-child),
+	.inline .button {
+		margin-left: 0;
+	}
+
+	label .message.hint {
+		opacity: 1;
+		position: static;
+	}
+
+	.form-horizontal label .message.hint {
+		line-height: inherit;
+		margin-left: inherit;
+	}
+
+	label .large,
+	label .xl {
+	  width: 280px;
+	  max-width: 90%;
+	}
+
+	.prepend,
+	.append {
+	  display: inline-block;
+	}
+
+	.form-horizontal .required div:first-child:before {
+	  content: '*';
+	  font-size: 17px;
+	}
+
+	.form-horizontal .required div:first-child:after {
+		display: none;
+	}
+
+}

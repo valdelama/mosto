@@ -30,6 +30,9 @@
 // support for required fields
 @import "forms/required";
 
+//sets a breakpoint for mobiles that makes horizontal forms stacked
+@import "forms/responsive";
+
 //basic button class
 /*@group buttons*/
 @import "buttons/basic.scss";
