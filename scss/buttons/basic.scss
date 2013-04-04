@@ -1,9 +1,14 @@
+button {
+	font-family: inherit;
+	font-size: 100%;
+}
+
 .button {
 	display: inline-block;
 	padding: 6px 16px;
 	border: 1px solid #ccc;
 	border: 1px solid rgba(0,0,0,0.15);
-	border-radius: 4px;
+	border-radius: $radius;
 	color: $darker-grey;
 	text-align: center;
 	line-height: 15px;

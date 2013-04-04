@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-	    <title>MOSTOs Forms with normalize.css</title>
+	    <title>MOSTOs Forms - Horizontal</title>
 
-        <link href="css/normalize.css" rel="stylesheet">
-		<link href="css/forms.css" rel="stylesheet">
+        <link href="css/forms.css" rel="stylesheet">
 
 		<!-- Just some styles for the demo -->
 		<style>
@@ -26,9 +25,6 @@
 				background: #ccc;
 			}
 
-
-
-
 		</style>
 
 	</head>
@@ -36,53 +32,56 @@
     <body>
 
         <div class="container content">
-			<p>Just a little test to make sure normalize.css doesn't break anything.</p>
-			<form>
+
+			<form class="form-horizontal">
 
 				<fieldset>
 					<legend>Account details</legend>
 					<label>
-						Username
+						<div>Username</div>
 						<input type="text" placeholder="Username" tabindex="1" autofocus="autofocus">
+						<span class="message hint">Must be at least five characters</span>
 					</label>
 					<label>
-						Password
+						<div>Password</div>
+						<input type="password" placeholder="Password" tabindex="1">
+						<span class="message hint">Must contain one number and one capital letter</span>
+					</label>
+					<label>
+						<div>Repeat password</div>
 						<input type="password" placeholder="Password" tabindex="1">
 					</label>
 					<label>
-						Repeat password
-						<input type="password" placeholder="Password" tabindex="1">
-					</label>
-					<label>
-						Email address
+						<div>Email address</div>
 						<input type="email" placeholder="Email" tabindex="1">
+						<span class="message hint">Must be a valid email address</span>
 					</label>
 				</fieldset>
 
 				<fieldset>
 					<legend>Address</legend>
 					<label>
-						First name
+						<div>First name</div>
 						<input type="text" placeholder="First name" tabindex="1">
 					</label>
 					<label>
-						Last name
+						<div>Last name</div>
 						<input type="text" placeholder="Last name" tabindex="1">
 					</label>
 					<label>
-						Address
+						<div>Address</div>
 						<textarea placeholder="Address (House number and street)" tabindex="1"></textarea>
 					</label>
 					<label>
-						City
+						<div>City</div>
 						<input type="text" placeholder="City" tabindex="1">
 					</label>
 					<label>
-						Postcode
+						<div>Postcode</div>
 						<input type="text" placeholder="Postcode" tabindex="1">
 					</label>
 					<label>
-						Country
+						<div>Country</div>
 						<select tabindex="1">
 							<option>Spain</option>
 							<option>United Kingdom</option>
@@ -127,7 +126,7 @@
 				</fieldset>
 				<fieldset>
 					<legend>Subscriptions</legend>
-					<div class="label-group">
+					<div class="label-group input-below">
 						<div>I want to receive information about</div>
 						<label>
 							<input type="checkbox" tabindex="1"> Offers and promotions
@@ -136,7 +135,9 @@
 							<input type="checkbox" tabindex="1"> New features
 						</label>
 					</div>
-					<button class="button primary" tabindex="1">Send</button>
+					<div class="submit-wrapper">
+						<button type="submit" class="button primary" tabindex="1">Send</button>
+					</div>
 				</fieldset>
 			</form>
 

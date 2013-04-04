@@ -63,13 +63,14 @@ input[type="search"] {
 	width: 360px;
 }
 .inline label:not(:first-child),
-.inline .button{
+.inline .button,
+.inline .button[type="submit"]{
 	margin-left: $line-height;
 }
 
-.form-horizontal button[type="submit"],
-.form-horizontal input[type="submit"] {
+.form-horizontal .button[type="submit"] {
 	margin-left: 137px;
 }
+
 
 /*@end inline form */

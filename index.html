@@ -13,7 +13,8 @@
 			}
 			.container {
 				width: 100%;
-				margin: 18px auto;
+				max-width: 600px;
+				margin: 18px 0;
 				padding: 0 20px;
 			}
 
@@ -574,6 +575,126 @@
                     </label>
                 </div>
 
+			</form>
+
+
+			<hr>
+
+			<h3>Fieldsets and legends</h3>
+			<form class="form-horizontal">
+				<fieldset>
+					<legend>Account details</legend>
+					<label>
+						<div>Username</div>
+						<input type="text" placeholder="Username" tabindex="1" autofocus="autofocus">
+						<span class="message hint">Must be at least five characters</span>
+					</label>
+					<label>
+						<div>Password</div>
+						<input type="password" placeholder="Password" tabindex="1">
+						<span class="message hint">Must contain one number and one capital letter</span>
+					</label>
+					<label>
+						<div>Repeat password</div>
+						<input type="password" placeholder="Password" tabindex="1">
+					</label>
+					<label>
+						<div>Email address</div>
+						<input type="email" placeholder="Email" tabindex="1">
+						<span class="message hint">Must be a valid email address</span>
+					</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Address</legend>
+					<label>
+						<div>First name</div>
+						<input type="text" placeholder="First name" tabindex="1">
+					</label>
+					<label>
+						<div>Last name</div>
+						<input type="text" placeholder="Last name" tabindex="1">
+					</label>
+					<label>
+						<div>Address</div>
+						<textarea placeholder="Address (House number and street)" tabindex="1"></textarea>
+					</label>
+					<label>
+						<div>City</div>
+						<input type="text" placeholder="City" tabindex="1">
+					</label>
+					<label>
+						<div>Postcode</div>
+						<input type="text" placeholder="Postcode" tabindex="1">
+					</label>
+					<label>
+						<div>Country</div>
+						<select tabindex="1">
+							<option>Spain</option>
+							<option>United Kingdom</option>
+						</select>
+					</label>
+				</fieldset>
+			</form>
+
+
+			<hr>
+			<h3>Buttons</h3>
+
+			<h4>Standard position</h4>
+
+			<form>
+				<label>
+					Email address
+					<input type="email" tabindex="1">
+				</label>
+				<label>
+					Password
+					<input type="password" tabindex="1">
+				</label>
+				<button type="submit" class="button">Login</button>
+			</form>
+
+			<form class="form-horizontal">
+				<label>
+					<div>Email address</div>
+					<input type="email" tabindex="1">
+				</label>
+				<label>
+					<div>Password</div>
+					<input type="password" tabindex="1">
+				</label>
+				<button type="submit" class="button">Login</button>
+			</form>
+
+			<h4>Right aligned</h4>
+
+			<form>
+				<label>
+					Email address
+					<input type="email" tabindex="1">
+				</label>
+				<label>
+					Password
+					<input type="password" tabindex="1">
+				</label>
+				<div class="submit-wrapper">
+					<button type="submit" class="button">Login</button>
+				</div>
+			</form>
+
+			<form class="form-horizontal">
+				<label>
+					<div>Email address</div>
+					<input type="email" tabindex="1">
+				</label>
+				<label>
+					<div>Password</div>
+					<input type="password" tabindex="1">
+				</label>
+				<div class="submit-wrapper">
+					<button type="submit" class="button">Login</button>
+				</div>
 			</form>
 
         </div>
