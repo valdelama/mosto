@@ -5,6 +5,7 @@ i {
 form {
 	font: 13px/18px;
 	margin-bottom: $line-height;
+	clear: both;
 }
 form * {
 	margin: 0;
@@ -57,6 +58,7 @@ textarea {
 	height: auto;
 	min-height: 60px;
 	width: 240px;
+	margin-top: 5px;
 }
 input[type="number"] {
 	width: 60px;
@@ -121,13 +123,11 @@ input:-moz-placeholder {
 ::-webkit-input-placeholder {
   color: $light-grey;
 }
-label .message {
+form .message {
 	color: $light-grey;
 	font-size: 12px;
-	vertical-align: middle;
-}
-.help-inline label input {
-	display: inline;
+	clear: both;
+	display: block;
 }
 .label-group label:first-of-type {
 	margin-top: $line-height/2;
