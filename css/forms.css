@@ -219,6 +219,7 @@ form .message {
   width: 100%;
   text-align: left;
   margin-bottom: 9px;
+  line-height: inherit;
 }
 
 .form-horizontal .input-below textarea {
@@ -226,7 +227,6 @@ form .message {
 }
 
 .form-horizontal .input-below label,
-.form-horizontal label.input-below div:first-child,
 .form-horizontal .stacked label {
   line-height: 18px;
 }
@@ -252,19 +252,27 @@ form .message {
   margin-left: 141px;
 }
 
-.form-horizontal .label-group label:first-of-type,
-.inline.label-group label:first-of-type {
-  margin-top: inherit;
-}
-
 .form-horizontal .submit-wrapper {
   width: 360px;
 }
 
-.inline label:not(:first-child),
-.inline .button,
-.inline .button[type="submit"] {
-  margin-left: 18px;
+.inline label,
+.form-horizontal .label-group label {
+  margin-right: 9px;
+}
+
+.inline label:last-of-type,
+.form-horizontal .label-group label:last-of-type {
+  margin-right: 0;
+}
+
+.inline .button {
+  margin-left: 9px;
+}
+
+.form-horizontal .label-group label:first-of-type,
+.inline.label-group label:first-of-type {
+  margin-top: inherit;
 }
 
 .form-horizontal .button[type="submit"] {

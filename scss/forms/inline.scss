@@ -43,12 +43,12 @@
 	width: 100%;
 	text-align: left;
 	margin-bottom: $line-height/2;
+	line-height: inherit;
 }
 .form-horizontal .input-below textarea {
 	width: 350px;
 }
 .form-horizontal .input-below label,
-.form-horizontal label.input-below div:first-child,
 .form-horizontal .stacked label {
 	line-height: $line-height;
 }
@@ -69,22 +69,26 @@
 	line-height: inherit;
 	margin-left: 141px;
 }
-.form-horizontal .label-group label:first-of-type,
-.inline.label-group label:first-of-type {
-	margin-top: inherit;
-}
 .form-horizontal .submit-wrapper {
 	width: 360px;
 }
-.inline label:not(:first-child),
-.inline .button,
-.inline .button[type="submit"]{
-	margin-left: $line-height;
+.inline label,
+.form-horizontal .label-group label {
+	margin-right: $line-height/2;
+}
+.inline label:last-of-type,
+.form-horizontal .label-group label:last-of-type {
+	margin-right: 0;
+}
+.inline .button {
+	margin-left: $line-height/2;
+}
+.form-horizontal .label-group label:first-of-type,
+.inline.label-group label:first-of-type {
+	margin-top: inherit;
 }
 
 .form-horizontal .button[type="submit"] {
 	margin-left: 137px;
 }
-
-
 /*@end inline form */
