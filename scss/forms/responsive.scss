@@ -1,16 +1,17 @@
 @media handheld, only screen and (max-width: 500px) {
 	.form-horizontal label > div:first-child,
 	.form-horizontal .label-group > div:first-child {
-		width: auto;
 		text-align: left;
-		padding-right: 0;
-		display: block;
+		float: none;
+		line-height: inherit;
 	}
 
 	label .message,
 	.label-group .message {
-		display: block;
+		float: none;
 		clear: both;
+		display: block;
+		width: 100%;
 	}
 
 	.form-horizontal .input-below textarea {
