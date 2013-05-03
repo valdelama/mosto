@@ -2,9 +2,12 @@ MOSTO
 ======
 
 A CSS/HTML framework for building forms using implicit label association (all inputs inside the label). This means much less markup because you have no annoying IDs and for="" tags to maintain. The framework supports two types of forms:
+
 1. stacked forms with the inputs below the label text
+
 2. horizontal forms with the inputs inline with the label text
-There are also a bunch of other features you can check out here http://valdelama.com/mosto or by checking out the demos that are included in the demo folder. If you are using another framework already (eg. bootstrap or foundation) then it's a good idea to not call their form related CSS as you will have some conflicts. I will be releasing stand-alone fixes soon for those two frameworks. 
+
+There are also a bunch of other features you can check out here http://valdelama.com/mosto or by checking out the demos that are included in the demo folder. If you are using another framework already (eg. bootstrap or foundation) then it's a good idea to not call their form related CSS as you will have some conflicts. I will be releasing stand-alone fixes soon for those two frameworks.
 
 
 Copyright and license
