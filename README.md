@@ -9,6 +9,10 @@ A CSS/HTML framework for building forms using implicit label association (all in
 
 There are also a bunch of other features you can check out here http://valdelama.com/mosto or by checking out the demos that are included in the demo folder. If you are using another framework already (eg. bootstrap or foundation) then it's a good idea to not call their form related CSS as you will have some conflicts. I will be releasing stand-alone fixes soon for those two frameworks.
 
+Versioning
+---------------------
+
+Mosto is versioned using the [Semantic Versioning](http://semver.org) specification.
 
 Copyright and license
 ---------------------

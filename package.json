@@ -1,0 +1,9 @@
+{
+	"name": "mosto",
+	"version": "1.0.0",
+	"description": "A CSS framework for building forms using minimal markup and implicit label association",
+	"main": "css/forms.css",
+	"ignore": [
+		"demo"
+	],
+}
